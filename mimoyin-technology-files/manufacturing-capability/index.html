@@ -197,7 +197,27 @@ document.head.appendChild(f);
       ]
     }
   ]
-}</script></p></div></div></article><div class="banner banner--after-content"><script>document.addEventListener('DOMContentLoaded',function(){
+}</script></p></div></div></article><div class="banner banner--after-content"><style>/* Desktop: show submenu on hover */
+@media (min-width: 48em) {
+  .navbar .has-submenu:hover > .navbar__submenu {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .navbar .has-submenu:hover > .navbar__submenu > .navbar__submenu {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .navbar .has-submenu > .navbar__submenu {
+    top: 100%;
+    left: 0;
+  }
+  .navbar .has-submenu > .navbar__submenu .has-submenu > .navbar__submenu {
+    top: 0;
+    left: 100%;
+  }
+}</style><script>document.addEventListener('DOMContentLoaded',function(){
 var c=document.querySelector('link[rel=canonical]');
 var o=document.querySelector('meta[property="og:url"]');
 if(c&&o){o.setAttribute('content',c.href);}
