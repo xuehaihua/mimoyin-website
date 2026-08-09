@@ -151,22 +151,19 @@ document.head.appendChild(f);
 }</script></p></div></div></article><div class="banner banner--after-content"><style>/* Desktop: show submenu on hover */
 @media (min-width: 48em) {
   .navbar .has-submenu:hover > .navbar__submenu {
-    display: block !important;
-    visibility: visible !important;
+    left: 0 !important;
     opacity: 1 !important;
+    visibility: visible !important;
+    transform: scale(1) !important;
+    -webkit-transform: scale(1) !important;
   }
   .navbar .has-submenu:hover > .navbar__submenu > .navbar__submenu {
-    display: block !important;
-    visibility: visible !important;
+    left: 100% !important;
+    top: 0 !important;
     opacity: 1 !important;
-  }
-  .navbar .has-submenu > .navbar__submenu {
-    top: 100%;
-    left: 0;
-  }
-  .navbar .has-submenu > .navbar__submenu .has-submenu > .navbar__submenu {
-    top: 0;
-    left: 100%;
+    visibility: visible !important;
+    transform: scale(1) !important;
+    -webkit-transform: scale(1) !important;
   }
 }</style><script>document.addEventListener('DOMContentLoaded',function(){
 var c=document.querySelector('link[rel=canonical]');
