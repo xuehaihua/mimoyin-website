@@ -189,47 +189,272 @@ document.head.appendChild(f);
   color: #ffffff !important;
   background: #2563eb !important;
   display: block !important;
-}</style><script>document.addEventListener('DOMContentLoaded',function(){
-var c=document.querySelector('link[rel=canonical]');
-var o=document.querySelector('meta[property="og:url"]');
-if(c&&o){o.setAttribute('content',c.href);}
-var md=document.querySelector('meta[name="description"]');
-var od=document.querySelector('meta[property="og:description"]');
-if(md&&od&&md.getAttribute('content')){od.setAttribute('content',md.getAttribute('content'));}
-});</script>(function(){var p=window.location.pathname,s='https://www.mimoyin.com',i=[{item:s+'/',name:'Home'}],segs=p.split('/').filter(Boolean),cp='',nm={'products':'Products','applications':'Applications','technology':'Technology','blog':'Blog','resources':'Resources','about':'About Us','manufacturing-capability':'Manufacturing','contact':'Contact Us'};segs.forEach(function(x,j){cp+='/'+x;var n=nm[x]||x.replace(/-/g,' ');if(j===segs.length-1){n=document.title.split('|')[0].trim();}i.push({item:s+cp,name:n});});if(i.length>1){var b={'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':i.map(function(it,k){return{'@type':'ListItem','position':k+1,'name':it.name,'item':it.item};})};var sc=document.createElement('script');sc.type='application/ld+json';sc.textContent=JSON.stringify(b);document.head.appendChild(sc);}})();<script>/* Auto-expand submenu based on current URL */
-(function(){
-  var path = window.location.pathname;
-  var menuItems = document.querySelectorAll('.navbar__menu li.has-submenu');
-  menuItems.forEach(function(item){
-    var links = item.querySelectorAll('a');
-    links.forEach(function(link){
-      var href = link.getAttribute('href');
-      if(href && (path === href || path.indexOf(href) === 0)){
-        item.setAttribute('aria-expanded', 'true');
-        var submenu = item.querySelector('.navbar__submenu');
-        if(submenu){
-          submenu.style.left = '0';
-          submenu.style.opacity = '1';
-          submenu.style.visibility = 'visible';
-        }
-        // Also check nested submenus
-        var nested = submenu ? submenu.querySelectorAll('.navbar__submenu') : [];
-        nested.forEach(function(ns){
-          var nestedLinks = ns.querySelectorAll('a');
-          nestedLinks.forEach(function(nl){
-            var nhref = nl.getAttribute('href');
-            if(nhref && (path === nhref || path.indexOf(nhref) === 0)){
-              ns.style.left = '100%';
-              ns.style.opacity = '1';
-              ns.style.visibility = 'visible';
-              ns.style.top = '0';
-            }
-          });
-        });
+}</style><script>document.addEventListener('DOMContentLoaded', function() {
+  // 1. og:url + og:description 修正
+  var c = document.querySelector('link[rel=canonical]');
+  var o = document.querySelector('meta[property="og:url"]');
+  if (c && o) { o.setAttribute('content', c.href); }
+  var md = document.querySelector('meta[name="description"]');
+  var od = document.querySelector('meta[property="og:description"]');
+  if (md && od && md.getAttribute('content')) { od.setAttribute('content', md.getAttribute('content')); }
+
+  // 2. BreadcrumbList JSON-LD 注入
+  (function() {
+    var p = window.location.pathname;
+    var s = 'https://www.mimoyin.com';
+    var i = [{ item: s + '/', name: 'Home' }];
+    var segs = p.split('/').filter(Boolean);
+    var cp = '';
+    var nm = {
+      'products': 'Products',
+      'applications': 'Applications',
+      'technology': 'Technology',
+      'blog': 'Blog',
+      'resources': 'Resources',
+      'about': 'About Us',
+      'manufacturing-capability': 'Manufacturing',
+      'contact': 'Contact Us'
+    };
+    segs.forEach(function(x, j) {
+      cp += '/' + x;
+      var n = nm[x] || x.replace(/-/g, ' ');
+      if (j === segs.length - 1) { n = document.title.split('|')[0].trim(); }
+      i.push({ item: s + cp, name: n });
+    });
+    if (i.length > 1) {
+      var b = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        'itemListElement': i.map(function(it, k) {
+          return {
+            '@type': 'ListItem',
+            'position': k + 1,
+            'name': it.name,
+            'item': it.item
+          };
+        })
+      };
+      var sc = document.createElement('script');
+      sc.type = 'application/ld+json';
+      sc.textContent = JSON.stringify(b);
+      document.head.appendChild(sc);
+    }
+  })();
+
+  // 3. TPU/ePTFE 产品页 Service schema
+  var p = window.location.pathname;
+  if (p.indexOf('tpu-waterproof-breathable-membrane') > -1 || p.indexOf('eptfe-waterproof-breathable-membrane') > -1) {
+    var t = p.indexOf('tpu-') > -1;
+    var s2 = document.createElement('script');
+    s2.type = 'application/ld+json';
+    s2.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      'name': (t ? 'TPU' : 'ePTFE') + ' Waterproof Breathable Membrane Custom Manufacturing',
+      'provider': {
+        '@type': 'Organization',
+        'name': 'Shenzhen Mimoyin Technology Co., Ltd.',
+        'url': 'https://www.mimoyin.com'
+      },
+      'areaServed': 'Worldwide',
+      'serviceType': (t ? 'Custom TPU' : 'Custom ePTFE') + ' membrane die-cutting and manufacturing',
+      'offers': {
+        '@type': 'Offer',
+        'priceCurrency': 'USD',
+        'availability': 'https://schema.org/InStock',
+        'url': 'https://www.mimoyin.com' + p
       }
     });
-  });
-})();</script></div></div></main><footer class="footer"><div class="footer__copyright">© 2026 Mimoyin Technology Co., Ltd. All rights reserved. Professional ePTFE waterproof breathable membrane manufacturer.</div></footer><script>window.publiiThemeMenuConfig = {    
+    document.head.appendChild(s2);
+  }
+
+  // 4. About 页 - 补全 ALT + Organization schema
+  if (p.indexOf('/about/') > -1) {
+    var imgs = document.querySelectorAll('img');
+    imgs.forEach(function(img) {
+      if (!img.alt && img.src.indexOf('87-2') > -1) { img.alt = 'Mimoyin ePTFE membrane production workshop'; }
+    });
+    var org = document.createElement('script');
+    org.type = 'application/ld+json';
+    org.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      'name': 'Shenzhen Mimoyin Technology Co., Ltd.',
+      'alternateName': '深圳市米摩音科技有限公司',
+      'url': 'https://www.mimoyin.com',
+      'logo': 'https://www.mimoyin.com/media/website/logo.png',
+      'description': 'Professional manufacturer of ePTFE waterproof breathable membranes, acoustic vent membranes, and pressure equalization vent membranes.',
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': '2/F, Building 3, Songyuan Lou Industrial Park, Songgang Street',
+        'addressLocality': 'Baoan District, Shenzhen',
+        'addressRegion': 'Guangdong',
+        'addressCountry': 'CN'
+      },
+      'contactPoint': {
+        '@type': 'ContactPoint',
+        'telephone': '+86-134-3084-5669',
+        'contactType': 'sales',
+        'email': 'info@mimoyin.com',
+        'availableLanguage': ['English', 'Chinese']
+      }
+    });
+    document.head.appendChild(org);
+  }
+
+  // 5. Contact 页 FAQPage
+  if (p.indexOf('/contact/') > -1) {
+    var cf = document.createElement('script');
+    cf.type = 'application/ld+json';
+    cf.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      'mainEntity': [
+        {
+          '@type': 'Question',
+          'name': 'What information should I include in my inquiry?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Please include: product application, required waterproof grade (IP67/IP68), key parameters (air permeability or acoustic loss), size/shape/adhesive requirements, and estimated monthly order quantity.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'How long does it take to get a quotation?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'We respond to all inquiries within 24 working hours. For standard membranes, quotations can be provided the same day.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'Do you provide free samples?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Yes. Free samples are available for quality testing. Customers are responsible for international shipping costs. Samples are dispatched within 3-5 working days.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'What is your minimum order quantity?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Prototyping supported with free samples. Mass-production MOQ starts from 1,000 pcs with flexible customization.'
+          }
+        }
+      ]
+    });
+    document.head.appendChild(cf);
+  }
+
+  // 6. Manufacturing 页 FAQPage
+  if (p.indexOf('/manufacturing-capability/') > -1) {
+    var mf = document.createElement('script');
+    mf.type = 'application/ld+json';
+    mf.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      'mainEntity': [
+        {
+          '@type': 'Question',
+          'name': 'What does Mimoyin manufacture?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'We manufacture ePTFE waterproof breathable membranes, acoustic vent membranes, and pressure equalization vent membranes. Not a reseller — we manufacture in-house.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'Is Mimoyin ePTFE membrane RoHS compliant?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Yes. Passed RoHS 2.0 testing by CTI, report No. A2240129904101001E. All 10 restricted substances Not Detected.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'Can you produce custom shapes to our drawing?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Yes. Custom-per-spec basis. Send your drawing and protection requirement, we propose material and converting solution.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'Where is your factory located?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Songgang, Baoan District, Shenzhen, Guangdong, China. Established 2018, 280 m² workshop, team of 6.'
+          }
+        }
+      ]
+    });
+    document.head.appendChild(mf);
+  }
+
+  // 7. TPU 页清理重复 Service
+  if (p.indexOf('tpu-waterproof-breathable-membrane') > -1) {
+    var svs = document.querySelectorAll('script[type="application/ld+json"]');
+    var count = 0;
+    svs.forEach(function(s) {
+      try {
+        var j = JSON.parse(s.textContent);
+        if (j['@type'] === 'Service') {
+          count++;
+          if (count > 1) { s.remove(); }
+        }
+      } catch (e) {}
+    });
+  }
+
+  // 8. Auto-expand submenu based on current URL
+  (function() {
+    var path = window.location.pathname;
+    var menuItems = document.querySelectorAll('.navbar__menu li.has-submenu');
+    menuItems.forEach(function(item) {
+      var links = item.querySelectorAll('a');
+      links.forEach(function(link) {
+        var href = link.getAttribute('href');
+        if (href && (path === href || path.indexOf(href) === 0)) {
+          item.setAttribute('aria-expanded', 'true');
+          var submenu = item.querySelector('.navbar__submenu');
+          if (submenu) {
+            submenu.style.left = '0';
+            submenu.style.opacity = '1';
+            submenu.style.visibility = 'visible';
+          }
+          var nested = submenu ? submenu.querySelectorAll('.navbar__submenu') : [];
+          nested.forEach(function(ns) {
+            var nestedLinks = ns.querySelectorAll('a');
+            nestedLinks.forEach(function(nl) {
+              var nhref = nl.getAttribute('href');
+              if (nhref && (path === nhref || path.indexOf(nhref) === 0)) {
+                ns.style.left = '100%';
+                ns.style.opacity = '1';
+                ns.style.visibility = 'visible';
+                ns.style.top = '0';
+              }
+            });
+          });
+        }
+      });
+    });
+  })();
+
+  // 9. google验证页和feed页加noindex
+  if (p.indexOf('google35367d1f4b8b7898') > -1) {
+    var m = document.createElement('meta');
+    m.name = 'robots';
+    m.content = 'noindex';
+    document.head.appendChild(m);
+  }
+  if (p.indexOf('feed.xml') > -1) {
+    var f = document.createElement('meta');
+    f.name = 'robots';
+    f.content = 'noindex';
+    document.head.appendChild(f);
+  }
+});</script></div></div></main><footer class="footer"><div class="footer__copyright">© 2026 Mimoyin Technology Co., Ltd. All rights reserved. Professional ePTFE waterproof breathable membrane manufacturer.</div></footer><script>window.publiiThemeMenuConfig = {    
       mobileMenuMode: 'sidebar',
       animationSpeed: 300,
       submenuWidth: 'auto',
