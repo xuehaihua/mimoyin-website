@@ -1,0 +1,52 @@
+Sitemap: https://www.mimoyin.com/sitemap.xml
+
+User-agent: *
+Allow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MegaIndex.ru
+Disallow: /
+
+User-agent: MauiBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: RankMathBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: SerpstatBot
+Disallow: /
+
+User-agent: BabbarTechBot
+Disallow: /
+
+User-agent: AliyunSecBot
+Disallow: /
+
+User-agent: Barkrowler
+Disallow: /
+
+User-agent: SEOkicks
+Disallow: /
+
+User-agent: meta-webindexer
+Disallow: /

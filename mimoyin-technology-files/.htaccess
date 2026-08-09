@@ -1,0 +1,16 @@
+RewriteEngine On
+RedirectMatch 301 "^/tags/waterproof-sound-permeable-membrane/$" "https://www.mimoyin.com/tags/acoustic-vent-membrane/"
+RedirectMatch 301 "^/tags/microphone-waterproof-acoustic-membrane/$" "https://www.mimoyin.com/tags/sound-transmission-waterproof-film/"
+RedirectMatch 301 "^/tags/waterproof/$" "https://www.mimoyin.com/tags/waterproof-membrane-principle/"
+RedirectMatch 301 "^/tags/waterproof-breathable-membrane/$" "https://www.mimoyin.com/tags/eptfe-membrane/"
+
+# -2 duplicate page redirects (2026-07-24)
+RedirectMatch 301 "^/tpu-waterproof-breathable-membrane-2/$" "https://www.mimoyin.com/tpu-waterproof-breathable-membrane/"
+RedirectMatch 301 "^/pu-waterproof-breathable-membrane-2/$" "https://www.mimoyin.com/pu-waterproof-breathable-membrane/"
+RedirectMatch 301 "^/eptfe-waterproof-breathable-membrane-2/$" "https://www.mimoyin.com/eptfe-waterproof-breathable-membrane/"
+RedirectMatch 301 "^/acoustic-vent-membrane-2/$" "https://www.mimoyin.com/acoustic-vent-membrane/"
+RedirectMatch 301 "^/waterproof-breathable-membrane-2/$" "https://www.mimoyin.com/waterproof-breathable-membrane/"
+RedirectMatch 301 "^/pressure-equalization-membrane-2/$" "https://www.mimoyin.com/pressure-equalization-membrane/"
+
+# -3 duplicate page redirect (2026-07-24)
+RedirectMatch 301 "^/tpu-waterproof-breathable-membrane-3/$" "https://www.mimoyin.com/tpu-waterproof-breathable-membrane/"

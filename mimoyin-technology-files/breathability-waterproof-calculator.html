@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breathability &amp; Waterproof Rating Calculator | ePTFE Vent Membrane</title>
+<meta name="description" content="Free interactive calculator for ePTFE waterproof breathable membrane: convert breathability (ml/min @ Ø10 mm orifice @ 7 kPa) to estimated waterproof rating (meters of water column), compare ePTFE vs PU vs non-fluorinated films, and get material selection guidance.">
+<style>
+  :root{
+    --brand:#1a5fb4; --brand-d:#134a8e; --ink:#1f2933; --muted:#6b7785;
+    --line:#e3e8ee; --bg:#f5f7fa; --card:#fff; --ok:#1f9d55; --warn:#c2740b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       color:var(--ink);background:var(--bg);line-height:1.6;}
+  .wrap{max-width:860px;margin:0 auto;padding:24px 18px 60px;}
+  header.top{border-bottom:3px solid var(--brand);padding-bottom:14px;margin-bottom:24px;}
+  header.top h1{margin:0 0 6px;font-size:25px;color:var(--brand-d);}
+  header.top p{margin:0;color:var(--muted);font-size:14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;margin-bottom:20px;
+        box-shadow:0 1px 3px rgba(16,24,40,.05);}
+  .tabs{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;}
+  .tab{flex:1;min-width:140px;padding:11px 10px;border:1px solid var(--line);background:#fff;border-radius:8px;
+       cursor:pointer;font-size:14px;font-weight:600;color:var(--muted);text-align:center;}
+  .tab.active{background:var(--brand);color:#fff;border-color:var(--brand);}
+  .row{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end;margin-bottom:14px;}
+  .field{flex:1;min-width:200px;}
+  label{display:block;font-size:13px;font-weight:600;margin-bottom:5px;color:var(--ink);}
+  input,select{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-size:15px;
+               color:var(--ink);background:#fff;}
+  input:focus,select:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(26,95,180,.12);}
+  button.calc{background:var(--brand);color:#fff;border:none;padding:11px 22px;border-radius:8px;font-size:15px;
+              font-weight:600;cursor:pointer;margin-top:4px;}
+  button.calc:hover{background:var(--brand-d);}
+  .result{margin-top:18px;padding:16px;border-radius:8px;background:#eef4fb;border:1px solid #cfe0f5;display:none;}
+  .result.show{display:block;}
+  .result .big{font-size:22px;font-weight:700;color:var(--brand-d);}
+  .result .sub{font-size:14px;color:var(--ink);margin-top:6px;}
+  .pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:600;margin-right:6px;}
+  .pill.low{background:#fdecc8;color:var(--warn);}
+  .pill.mid{background:#d8eafc;color:var(--brand-d);}
+  .pill.high{background:#e3f5ea;color:var(--ok);}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px;}
+  th,td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top;}
+  th{background:#eef2f7;color:var(--brand-d);font-weight:700;}
+  tr:nth-child(even) td{background:#fafbfc;}
+  .note{font-size:12.5px;color:var(--muted);margin-top:10px;}
+  .disc{font-size:12px;color:var(--muted);border-left:3px solid var(--warn);padding:8px 12px;background:#fff8ec;margin-top:10px;}
+  h2.sec{font-size:18px;color:var(--brand-d);margin:4px 0 12px;}
+  a{color:var(--brand);}
+  footer{font-size:12px;color:var(--muted);text-align:center;margin-top:30px;line-height:1.8;}
+  .faq h3{font-size:15px;margin:14px 0 4px;color:var(--ink);}
+  .faq p{margin:0 0 4px;font-size:13.5px;color:#36404a;}
+  @media(max-width:520px){header.top h1{font-size:21px;}.wrap{padding:16px 12px 50px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <h1>Breathability &amp; Waterproof Rating Calculator</h1>
+    <p>For ePTFE / PU / non-fluorinated waterproof breathable vent membranes · free tool by Mimoyin Technology</p>
+  </header>
+
+  <!-- CALCULATOR -->
+  <div class="card">
+    <div class="tabs">
+      <div class="tab active" data-tab="b2w" onclick="switchTab('b2w')">Breathability → Waterproof</div>
+      <div class="tab" data-tab="w2b" onclick="switchTab('w2b')">Waterproof → Breathability</div>
+    </div>
+
+    <!-- Tab 1: breathability -> waterproof -->
+    <div id="tab-b2w">
+      <div class="row">
+        <div class="field">
+          <label for="mat1">Membrane material</label>
+          <select id="mat1">
+            <option value="eptfe">ePTFE (expanded PTFE)</option>
+            <option value="pu">PU film</option>
+            <option value="nonflu">Non-fluorinated film</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="breath1">Breathability (ml/min @ Ø10&nbsp;mm orifice @ 7&nbsp;kPa)</label>
+          <input id="breath1" type="number" min="10" max="20000" step="10" value="2000" inputmode="decimal">
+        </div>
+        <div class="field" style="flex:0 0 auto;">
+          <button class="calc" onclick="calcB2W()">Calculate</button>
+        </div>
+      </div>
+      <div class="note">Breathability is measured as total air flow through a Ø10&nbsp;mm orifice at 7&nbsp;kPa differential pressure — the manufacturer's standard test method.</div>
+      <div class="result" id="res-b2w"></div>
+    </div>
+
+    <!-- Tab 2: waterproof -> breathability -->
+    <div id="tab-w2b" style="display:none;">
+      <div class="row">
+        <div class="field">
+          <label for="mat2">Membrane material</label>
+          <select id="mat2">
+            <option value="eptfe">ePTFE (expanded PTFE)</option>
+            <option value="pu">PU film</option>
+            <option value="nonflu">Non-fluorinated film</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="wp2">Target waterproof rating (meters of water column)</label>
+          <input id="wp2" type="number" min="0.1" max="60" step="0.5" value="10" inputmode="decimal">
+        </div>
+        <div class="field" style="flex:0 0 auto;">
+          <button class="calc" onclick="calcW2B()">Calculate</button>
+        </div>
+      </div>
+      <div class="note">Waterproof rating expressed as static water column height (meters). For sealed enclosures, map this to IP67 / IP68 ingress-protection grades per IEC 60529.</div>
+      <div class="result" id="res-w2b"></div>
+    </div>
+  </div>
+
+  <!-- COMPARISON TABLE -->
+  <div class="card">
+    <h2 class="sec">Material comparison (measured data)</h2>
+    <table>
+      <thead>
+        <tr><th>Property</th><th>ePTFE</th><th>PU film</th><th>Non-fluorinated film</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Max waterproof rating</td><td>2 – 50 m</td><td>1 – 2 m</td><td>1 – 2 m</td></tr>
+        <tr><td>Breathability range*</td><td>200 – 12,000 ml/min</td><td>mid band</td><td>narrow band</td></tr>
+        <tr><td>Sound attenuation</td><td>≤ 1 dB</td><td>0.5 – 1.5 dB</td><td>6 – 10 dB</td></tr>
+        <tr><td>Continuous temp. range</td><td>-40 ~ +260 °C</td><td>lower ceiling**</td><td>-40 ~ +120 °C</td></tr>
+        <tr><td>Typical use</td><td>outdoor / automotive / acoustic vents</td><td>consumer water-repellent</td><td>cost-sensitive general</td></tr>
+      </tbody>
+    </table>
+    <div class="note">* Breathability measured @ Ø10 mm orifice @ 7 kPa. ** PU film upper temperature limit is lower than ePTFE in factory testing and does not reach +260 °C.</div>
+  </div>
+
+  <!-- SELECTION GUIDANCE -->
+  <div class="card">
+    <h2 class="sec">How to read the trade-off</h2>
+    <p style="font-size:14px;margin:0 0 8px;">For ePTFE, breathability and waterproofing move in opposite directions:</p>
+    <table>
+      <thead><tr><th>Breathability band</th><th>Est. waterproof</th><th>Best fit</th></tr></thead>
+      <tbody>
+        <tr><td><span class="pill low">Low</span> 200 – 1,000 ml/min</td><td>50 – 30 m</td><td>deep-water / high-IP sealed enclosures</td></tr>
+        <tr><td><span class="pill mid">Mid</span> 1,000 – 5,000 ml/min</td><td>30 – 2 m</td><td>automotive sensors, outdoor electronics</td></tr>
+        <tr><td><span class="pill high">High</span> 5,000 – 12,000 ml/min</td><td>10 – 1 m</td><td>acoustic vents, wearables needing max airflow</td></tr>
+      </tbody>
+    </table>
+    <div class="disc"><strong>Custom per spec:</strong> Mimoyin supplies ePTFE membrane <em>by customer drawing / requirement</em> — we do not sell fixed SKU parts. Final breathability and waterproof values depend on pore structure, thickness and lamination, and must be confirmed by sampling and testing against your enclosure.</div>
+  </div>
+
+  <!-- FAQ (schema-friendly) -->
+  <div class="card faq" id="faq">
+    <h2 class="sec">Frequently asked questions</h2>
+    <h3>What does "ml/min @ Ø10 mm orifice @ 7 kPa" mean?</h3>
+    <p>It is the standard breathability test: total air flow (ml per minute) passing through a 10 mm diameter orifice under a 7 kPa pressure differential. Higher ml/min = more air-permeable = "breathable".</p>
+    <h3>Can I convert breathability directly to an IP rating?</h3>
+    <p>Indirectly. Breathability sets the waterproof ceiling (see trade-off table). Map the resulting water-column height to IP67 (1 m / 30 min) or IP68 (continuous immersion) per IEC 60529. The calculator gives the water-column estimate; IP grading also depends on enclosure sealing.</p>
+    <h3>Why is ePTFE better than PU or non-fluorinated film?</h3>
+    <p>ePTFE reaches 2–50 m waterproof with ≤1 dB sound loss and -40~+260 °C range, while PU / non-fluorinated films are limited to ~1–2 m waterproof and narrower temperature or acoustic windows.</p>
+    <h3>Do you sell standard membrane parts?</h3>
+    <p>No. Mimoyin is an ePTFE membrane material supplier; we match film to your drawing and test it (custom per spec). Contact us with your enclosure requirements.</p>
+  </div>
+
+  <footer>
+    Free tool by <a href="https://www.mimoyin.com/" rel="dofollow">Mimoyin Technology</a> — ePTFE waterproof breathable vent membrane supplier.<br>
+    Data based on manufacturer lab measurements; verify by sampling for production. Reference standard:
+    <a href="https://www.iec.ch/ip-ratings" target="_blank" rel="noopener">IEC 60529 (IP Code)</a>.
+  </footer>
+
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"What does ml/min at Ø10 mm orifice at 7 kPa mean?",
+     "acceptedAnswer":{"@type":"Answer","text":"It is the standard breathability test: total air flow (ml per minute) passing through a 10 mm diameter orifice under a 7 kPa pressure differential. Higher ml/min means more air-permeable, i.e. more breathable."}},
+    {"@type":"Question","name":"Can I convert breathability directly to an IP rating?",
+     "acceptedAnswer":{"@type":"Answer","text":"Indirectly. Breathability sets the waterproof ceiling. Map the resulting water-column height to IP67 (1 m / 30 min) or IP68 (continuous immersion) per IEC 60529. The calculator gives the water-column estimate; IP grading also depends on enclosure sealing."}},
+    {"@type":"Question","name":"Why is ePTFE better than PU or non-fluorinated film?",
+     "acceptedAnswer":{"@type":"Answer","text":"ePTFE reaches 2 to 50 m waterproof with at most 1 dB sound loss and a -40 to +260 Celsius range, while PU and non-fluorinated films are limited to about 1 to 2 m waterproof with narrower temperature or acoustic windows."}},
+    {"@type":"Question","name":"Do you sell standard membrane parts?",
+     "acceptedAnswer":{"@type":"Answer","text":"No. Mimoyin is an ePTFE membrane material supplier; we match film to your drawing and test it, custom per spec. Contact us with your enclosure requirements."}}
+  ]
+}
+</script>
+
+<script>
+// ePTFE empirical trade-off curve: breathability(ml/min) -> waterproof(meters)
+// piecewise linear, based on manufacturer measured ranges
+var EPTFE = [
+  {b:200,  w:50},
+  {b:1000, w:30},
+  {b:5000, w:2},
+  {b:12000,w:1}
+];
+
+function interpB2W(b){
+  if(b<=EPTFE[0].b) return EPTFE[0].w;
+  if(b>=EPTFE[EPTFE.length-1].b) return EPTFE[EPTFE.length-1].w;
+  for(var i=0;i<EPTFE.length-1;i++){
+    var p=EPTFE[i], q=EPTFE[i+1];
+    if(b>=p.b && b<=q.b){
+      var t=(b-p.b)/(q.b-p.b);
+      return p.w + t*(q.w-p.w);
+    }
+  }
+  return null;
+}
+function interpW2B(w){
+  if(w>=EPTFE[0].w) return EPTFE[0].b;
+  if(w<=EPTFE[EPTFE.length-1].w) return EPTFE[EPTFE.length-1].b;
+  for(var i=0;i<EPTFE.length-1;i++){
+    var p=EPTFE[i], q=EPTFE[i+1];
+    if(w<=p.w && w>=q.w){
+      var t=(w-p.w)/(q.w-p.w);
+      return p.b + t*(q.b-p.b);
+    }
+  }
+  return null;
+}
+function band(b){
+  if(b<1000) return '<span class="pill low">Low</span>';
+  if(b<5000) return '<span class="pill mid">Mid</span>';
+  return '<span class="pill high">High</span>';
+}
+function matLabel(m){return m==='eptfe'?'ePTFE':(m==='pu'?'PU film':'Non-fluorinated film');}
+
+function switchTab(t){
+  document.querySelectorAll('.tab').forEach(function(el){el.classList.remove('active');});
+  document.querySelector('.tab[data-tab="'+t+'"]').classList.add('active');
+  document.getElementById('tab-b2w').style.display = (t==='b2w')?'block':'none';
+  document.getElementById('tab-w2b').style.display = (t==='w2b')?'block':'none';
+}
+
+function calcB2W(){
+  var m=document.getElementById('mat1').value;
+  var b=parseFloat(document.getElementById('breath1').value);
+  var box=document.getElementById('res-b2w');
+  if(isNaN(b)||b<=0){box.className='result show';box.innerHTML='Please enter a valid breathability value.';return;}
+  var html='';
+  if(m==='eptfe'){
+    var w=interpB2W(b);
+    html+='<div class="big">≈ '+w.toFixed(w<10?1:0)+' m water column</div>';
+    html+='<div class="sub">'+band(b)+' breathability band · estimated waterproof ceiling for ePTFE</div>';
+    var ip = w>=1 ? 'Supports IP67 (1 m / 30 min); '+(w>=2?'also suitable for IP68 continuous-immersion design.':'limited IP68 margin — verify by enclosure test.') : 'Below 1 m — not for IP67 sealed enclosures.';
+    html+='<div class="sub">'+ip+'</div>';
+  }else{
+    html+='<div class="big">≈ 1 – 2 m water column</div>';
+    html+='<div class="sub">'+matLabel(m)+' is limited to ~1–2 m waterproof regardless of breathability. Supports IP67 only; IP68 not recommended.</div>';
+    html+='<div class="sub" style="color:var(--warn)">For higher waterproofing, switch to ePTFE.</div>';
+  }
+  html+='<div class="note">Estimate from empirical curve; confirm by sampling your enclosure.</div>';
+  box.className='result show';box.innerHTML=html;
+}
+
+function calcW2B(){
+  var m=document.getElementById('mat2').value;
+  var w=parseFloat(document.getElementById('wp2').value);
+  var box=document.getElementById('res-w2b');
+  if(isNaN(w)||w<=0){box.className='result show';box.innerHTML='Please enter a valid waterproof rating.';return;}
+  var html='';
+  if(m==='eptfe'){
+    var b=interpW2B(w);
+    if(b===null) b=w>=50?200:12000;
+    html+='<div class="big">≈ '+Math.round(b).toLocaleString()+' ml/min</div>';
+    html+='<div class="sub">'+band(b)+' breathability band needed for ~'+w+' m waterproof (ePTFE)</div>';
+    html+='<div class="note">Typical ePTFE band: 200 – 12,000 ml/min. Values outside this need custom pore design.</div>';
+  }else{
+    html+='<div class="big" style="color:var(--warn)">Not achievable with '+matLabel(m)+'</div>';
+    html+='<div class="sub">'+matLabel(m)+' maxes at ~1–2 m waterproof. Choose ePTFE for '+w+' m target.</div>';
+  }
+  box.className='result show';box.innerHTML=html;
+}
+</script>
+</body>
+</html>
