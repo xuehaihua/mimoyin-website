@@ -166,7 +166,40 @@ if(c&&o){o.setAttribute('content',c.href);}
 var md=document.querySelector('meta[name="description"]');
 var od=document.querySelector('meta[property="og:description"]');
 if(md&&od&&md.getAttribute('content')){od.setAttribute('content',md.getAttribute('content'));}
-});</script><script>(function(){var p=window.location.pathname,s='https://www.mimoyin.com',i=[{item:s+'/',name:'Home'}],segs=p.split('/').filter(Boolean),cp='',nm={'products':'Products','applications':'Applications','technology':'Technology','blog':'Blog','resources':'Resources','about':'About Us','manufacturing-capability':'Manufacturing','contact':'Contact Us'};segs.forEach(function(x,j){cp+='/'+x;var n=nm[x]||x.replace(/-/g,' ');if(j===segs.length-1){n=document.title.split('|')[0].trim();}i.push({item:s+cp,name:n});});if(i.length>1){var b={'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':i.map(function(it,k){return{'@type':'ListItem','position':k+1,'name':it.name,'item':it.item};})};var sc=document.createElement('script');sc.type='application/ld+json';sc.textContent=JSON.stringify(b);document.head.appendChild(sc);}})();</script></div></div></main><footer class="footer"><div class="footer__copyright">© 2026 Mimoyin Technology Co., Ltd. All rights reserved. Professional ePTFE waterproof breathable membrane manufacturer.</div></footer><script>window.publiiThemeMenuConfig = {    
+});</script>(function(){var p=window.location.pathname,s='https://www.mimoyin.com',i=[{item:s+'/',name:'Home'}],segs=p.split('/').filter(Boolean),cp='',nm={'products':'Products','applications':'Applications','technology':'Technology','blog':'Blog','resources':'Resources','about':'About Us','manufacturing-capability':'Manufacturing','contact':'Contact Us'};segs.forEach(function(x,j){cp+='/'+x;var n=nm[x]||x.replace(/-/g,' ');if(j===segs.length-1){n=document.title.split('|')[0].trim();}i.push({item:s+cp,name:n});});if(i.length>1){var b={'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':i.map(function(it,k){return{'@type':'ListItem','position':k+1,'name':it.name,'item':it.item};})};var sc=document.createElement('script');sc.type='application/ld+json';sc.textContent=JSON.stringify(b);document.head.appendChild(sc);}})();<script>/* Auto-expand submenu based on current URL */
+(function(){
+  var path = window.location.pathname;
+  var menuItems = document.querySelectorAll('.navbar__menu li.has-submenu');
+  menuItems.forEach(function(item){
+    var links = item.querySelectorAll('a');
+    links.forEach(function(link){
+      var href = link.getAttribute('href');
+      if(href && (path === href || path.indexOf(href) === 0)){
+        item.setAttribute('aria-expanded', 'true');
+        var submenu = item.querySelector('.navbar__submenu');
+        if(submenu){
+          submenu.style.left = '0';
+          submenu.style.opacity = '1';
+          submenu.style.visibility = 'visible';
+        }
+        // Also check nested submenus
+        var nested = submenu ? submenu.querySelectorAll('.navbar__submenu') : [];
+        nested.forEach(function(ns){
+          var nestedLinks = ns.querySelectorAll('a');
+          nestedLinks.forEach(function(nl){
+            var nhref = nl.getAttribute('href');
+            if(nhref && (path === nhref || path.indexOf(nhref) === 0)){
+              ns.style.left = '100%';
+              ns.style.opacity = '1';
+              ns.style.visibility = 'visible';
+              ns.style.top = '0';
+            }
+          });
+        });
+      }
+    });
+  });
+})();</script></div></div></main><footer class="footer"><div class="footer__copyright">© 2026 Mimoyin Technology Co., Ltd. All rights reserved. Professional ePTFE waterproof breathable membrane manufacturer.</div></footer><script>window.publiiThemeMenuConfig = {    
       mobileMenuMode: 'sidebar',
       animationSpeed: 300,
       submenuWidth: 'auto',
