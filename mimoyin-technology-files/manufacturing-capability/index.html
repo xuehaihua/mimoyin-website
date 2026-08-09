@@ -227,7 +227,6 @@ document.head.appendChild(f);
 .mm-about-contact h3{margin:0 0 12px 0;font-size:18px;color:#1f2937}
 .mm-about-contact p{margin:6px 0;color:#374151;line-height:1.6}
 .mm-about-contact strong{color:#1f2937}
-/* 回到顶部按钮 */
 #mm-back-to-top{position:fixed;right:24px;bottom:32px;width:48px;height:48px;border-radius:50%;background:#2563eb;color:#fff;border:none;cursor:pointer;font-size:22px;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s,background .3s,transform .3s;z-index:9998;box-shadow:0 4px 12px rgba(37,99,235,.3)}
 #mm-back-to-top.show{opacity:1;visibility:visible}
 #mm-back-to-top:hover{background:#1d4ed8;transform:translateY(-3px)}
@@ -239,7 +238,7 @@ document.head.appendChild(f);
                 window.location.hostname === '' || p.indexOf('/preview/') > -1 ||
                 p.indexOf('Users') > -1 || p.indexOf('Documents') > -1;
 
-  // 1. og:url + og:description 修正
+  // 1. og:url + og:description
   var c = document.querySelector('link[rel=canonical]');
   var o = document.querySelector('meta[property="og:url"]');
   if (c && o) { o.setAttribute('content', c.href); }
@@ -280,7 +279,7 @@ document.head.appendChild(f);
     })();
   }
 
-  // 3. 可见面包屑导航 UI
+  // 3. 可见面包屑 UI
   if (!isLocal) {
     (function() {
       var segs = p.split('/').filter(Boolean);
@@ -316,7 +315,7 @@ document.head.appendChild(f);
     })();
   }
 
-  // 4. TPU/ePTFE 产品页 Service schema
+  // 4. TPU/ePTFE Service schema
   if (p.indexOf('tpu-waterproof-breathable-membrane') > -1 || p.indexOf('eptfe-waterproof-breathable-membrane') > -1) {
     var isTPU = p.indexOf('tpu-') > -1;
     var s2 = document.createElement('script');
@@ -333,7 +332,7 @@ document.head.appendChild(f);
     document.head.appendChild(s2);
   }
 
-  // 5. TWS 文章 FAQPage
+  // 5. TWS FAQPage
   if (p.indexOf('tws-earbuds-waterproofing-solutions') > -1) {
     var tf = document.createElement('script');
     tf.type = 'application/ld+json';
@@ -353,7 +352,7 @@ document.head.appendChild(f);
     document.head.appendChild(tf);
   }
 
-  // 6. Contact 页 FAQPage
+  // 6. Contact FAQPage
   if (p.indexOf('/contact/') > -1) {
     var cf = document.createElement('script');
     cf.type = 'application/ld+json';
@@ -373,7 +372,7 @@ document.head.appendChild(f);
     document.head.appendChild(cf);
   }
 
-  // 7. Manufacturing 页 FAQPage
+  // 7. Manufacturing FAQPage
   if (p.indexOf('/manufacturing-capability/') > -1) {
     var mf = document.createElement('script');
     mf.type = 'application/ld+json';
@@ -393,7 +392,7 @@ document.head.appendChild(f);
     document.head.appendChild(mf);
   }
 
-  // 8. About 页 - 联系卡片 + Organization schema
+  // 8. About 联系卡片 + Organization
   if (p.indexOf('/about/') > -1) {
     var imgs = document.querySelectorAll('img');
     imgs.forEach(function(img) {
@@ -422,7 +421,7 @@ document.head.appendChild(f);
     document.head.appendChild(org);
   }
 
-  // 9. TPU 页清理重复 Service
+  // 9. TPU 去重
   if (p.indexOf('tpu-waterproof-breathable-membrane') > -1) {
     var svs = document.querySelectorAll('script[type="application/ld+json"]');
     var count = 0;
@@ -434,7 +433,7 @@ document.head.appendChild(f);
     });
   }
 
-  // 10. Auto-expand submenu
+  // 10. 导航自动展开
   (function() {
     var menuItems = document.querySelectorAll('.navbar__menu li.has-submenu');
     menuItems.forEach(function(item) {
@@ -460,7 +459,7 @@ document.head.appendChild(f);
     });
   })();
 
-  // 11. 验证页和feed页加noindex
+  // 11. noindex
   if (!isLocal) {
     if (p.indexOf('google35367d1f4b8b7898') > -1) {
       var m = document.createElement('meta'); m.name = 'robots'; m.content = 'noindex'; document.head.appendChild(m);
@@ -477,12 +476,10 @@ document.head.appendChild(f);
     btn.setAttribute('aria-label', 'Back to top');
     btn.innerHTML = '&#8593;';
     document.body.appendChild(btn);
-    // 滚动监听：超过 300px 显示按钮
     window.addEventListener('scroll', function() {
       if (window.pageYOffset > 300) { btn.classList.add('show'); }
       else { btn.classList.remove('show'); }
     }, { passive: true });
-    // 点击平滑滚动回顶部
     btn.addEventListener('click', function() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
