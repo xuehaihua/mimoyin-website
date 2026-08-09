@@ -1,0 +1,6 @@
+﻿其他资料/
+*.zip
+*.bat
+__MACOSX/
+.DS_Store
+Thumbs.db
