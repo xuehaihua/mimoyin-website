@@ -189,7 +189,37 @@
 #mm-back-to-top.show{opacity:1;visibility:visible}
 #mm-back-to-top:hover{background:#1d4ed8;transform:translateY(-3px)}
 #mm-back-to-top:active{transform:translateY(-1px)}
-@media(max-width:768px){#mm-back-to-top{right:16px;bottom:20px;width:42px;height:42px;font-size:19px}}</style><script>document.addEventListener('DOMContentLoaded', function() {
+@media(max-width:768px){#mm-back-to-top{right:16px;bottom:20px;width:42px;height:42px;font-size:19px}}</style><script>// .html URL redirect + canonical fix (runs before DOM ready)
+(function() {
+  var path = window.location.pathname;
+  var isLocal = window.location.protocol === 'file:' || !window.location.hostname ||
+                window.location.hostname === '' || path.indexOf('/preview/') > -1 ||
+                path.indexOf('Users') > -1 || path.indexOf('Documents') > -1;
+  if (isLocal) return;
+  if (path === '/google35367d1f4b8b7898.html' || path === '/feed.xml' ||
+      path === '/feed.json' || path === '/sitemap.xml' || path === '/robots.txt' ||
+      path === '/breathability-waterproof-calculator.html') return;
+  if (path.endsWith('.html')) {
+    var newPath = path.substring(0, path.length - 5);
+    if (newPath === '') newPath = '/';
+    var link = document.querySelector('link[rel=canonical]');
+    if (!link) { link = document.createElement('link'); link.rel = 'canonical'; document.head.appendChild(link); }
+    link.href = window.location.origin + newPath;
+    window.location.replace(newPath);
+    return;
+  }
+  var canon = document.querySelector('link[rel=canonical]');
+  if (!canon) {
+    canon = document.createElement('link');
+    canon.rel = 'canonical';
+    canon.href = window.location.href;
+    document.head.appendChild(canon);
+  } else if (canon.href && canon.href.indexOf('.html') > -1) {
+    canon.href = canon.href.replace(/\.html$/, '');
+  }
+})();
+
+document.addEventListener('DOMContentLoaded', function() {
   function hasSchema(type) {
     var scripts = document.querySelectorAll('script[type="application/ld+json"]');
     for (var i = 0; i < scripts.length; i++) {

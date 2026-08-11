@@ -1,0 +1,96 @@
+﻿# Cloudflare Pages Redirect Rules
+# Format: from to [status]
+
+# --- .html suffix redirects (301 permanent) ---
+/about.html /about/ 301
+/contact.html /contact/ 301
+/manufacturing-capability.html /manufacturing-capability/ 301
+/acoustic-vent-membrane.html /acoustic-vent-membrane/ 301
+/acoustic-vent-membrane-specifications.html /acoustic-vent-membrane-specifications/ 301
+/acoustic-vent-membrane-waterproof-sound-permeable-membrane.html /acoustic-vent-membrane-waterproof-sound-permeable-membrane/ 301
+/acoustic-waterproof-membrane.html /acoustic-waterproof-membrane/ 301
+/action-camera-waterproof-sound-membrane.html /action-camera-waterproof-sound-membrane/ 301
+/advanced-waterproof-and-acoustic-membrane-technology.html /advanced-waterproof-and-acoustic-membrane-technology/ 301
+/automotive-electronics.html /automotive-electronics/ 301
+/automotive-electronics-vent-membrane.html /automotive-electronics-vent-membrane/ 301
+/automotive-pressure-relief-vent-application-guide.html /automotive-pressure-relief-vent-application-guide/ 301
+/automotive-waterproof-breathable-membrane.html /automotive-waterproof-breathable-membrane/ 301
+/automotive-waterproof-breathable-membrane-solutions.html /automotive-waterproof-breathable-membrane-solutions/ 301
+/custom-die-cut-eptfe-membrane.html /custom-die-cut-eptfe-membrane/ 301
+/earpiece-waterproof-sound-permeable-membrane.html /earpiece-waterproof-sound-permeable-membrane/ 301
+/electric-toothbrush-pressure-balance-vent-membrane.html /electric-toothbrush-pressure-balance-vent-membrane/ 301
+/eptfe-vent-membrane-manufacturer-guide.html /eptfe-vent-membrane-manufacturer-guide/ 301
+/eptfe-vs-tpu-membrane-comparison-guide.html /eptfe-vs-tpu-membrane-comparison-guide/ 301
+/eptfe-vs-tpu-membrane-detailed-comparison-guide.html /eptfe-vs-tpu-membrane-detailed-comparison-guide/ 301
+/eptfe-waterproof-breathable-membrane.html /eptfe-waterproof-breathable-membrane/ 301
+/eptfe-waterproof-breathable-membrane-industrial-solutions.html /eptfe-waterproof-breathable-membrane-industrial-solutions/ 301
+/eptfe-waterproof-breathable-membrane-material.html /eptfe-waterproof-breathable-membrane-material/ 301
+/eptfe-waterproof-breathable-membrane-selection-guide.html /eptfe-waterproof-breathable-membrane-selection-guide/ 301
+/eptfe-waterproof-breathable-membrane-specifications.html /eptfe-waterproof-breathable-membrane-specifications/ 301
+/eptfe-waterproof-sound-permeable-membrane-small-acoustic-holes.html /eptfe-waterproof-sound-permeable-membrane-small-acoustic-holes/ 301
+/eptfe-waterproof-vent-membrane-small-shells-batteries-microphones.html /eptfe-waterproof-vent-membrane-small-shells-batteries-microphones/ 301
+/fluorine-free-vs-eptfe-vent-membrane.html /fluorine-free-vs-eptfe-vent-membrane/ 301
+/how-waterproof-membranes-work.html /how-waterproof-membranes-work/ 301
+/industrial-sensors.html /industrial-sensors/ 301
+/ip67-ip68-waterproof-membrane.html /ip67-ip68-waterproof-membrane/ 301
+/ip67-vs-ip68-explained.html /ip67-vs-ip68-explained/ 301
+/locator-bottom-shell-pressure-balance-vent-membrane.html /locator-bottom-shell-pressure-balance-vent-membrane/ 301
+/membranes-for-tws-audio-devices.html /membranes-for-tws-audio-devices/ 301
+/mic-waterproof-vent-membrane.html /mic-waterproof-vent-membrane/ 301
+/mic-waterproof-vent-membrane-low-loss.html /mic-waterproof-vent-membrane-low-loss/ 301
+/mic-waterproof-vent-membrane-low-loss-app.html /mic-waterproof-vent-membrane-low-loss-app/ 301
+/outdoor-lighting.html /outdoor-lighting/ 301
+/pressure-balance-vent-membrane-black-roll-ip68.html /pressure-balance-vent-membrane-black-roll-ip68/ 301
+/pressure-balance-vent-membrane-ip68-installation-aging-cost.html /pressure-balance-vent-membrane-ip68-installation-aging-cost/ 301
+/pressure-balance-vent-membrane-ml-air-permeability.html /pressure-balance-vent-membrane-ml-air-permeability/ 301
+/pressure-balance-vent-membrane-selection-guide.html /pressure-balance-vent-membrane-selection-guide/ 301
+/pressure-equalization-membrane.html /pressure-equalization-membrane/ 301
+/pressure-equalization-vent-membrane.html /pressure-equalization-vent-membrane/ 301
+/pressure-equalization-vent-membrane-specifications.html /pressure-equalization-vent-membrane-specifications/ 301
+/pressure-relief-vent-membrane-material-comparison.html /pressure-relief-vent-membrane-material-comparison/ 301
+/pu-waterproof-breathable-membrane.html /pu-waterproof-breathable-membrane/ 301
+/pu-waterproof-breathable-membrane-solutions.html /pu-waterproof-breathable-membrane-solutions/ 301
+/shaver-pressure-balance-vent-membrane.html /shaver-pressure-balance-vent-membrane/ 301
+/smart-helmet-acoustic-mic-waterproof-sound-membrane.html /smart-helmet-acoustic-mic-waterproof-sound-membrane/ 301
+/smartphone-acoustic-vent-membrane.html /smartphone-acoustic-vent-membrane/ 301
+/speaker-waterproof-sound-membrane.html /speaker-waterproof-sound-membrane/ 301
+/support.html /support/ 301
+/technical-articles-on-membrane-technology.html /technical-articles-on-membrane-technology/ 301
+/tpu-waterproof-breathable-membrane.html /tpu-waterproof-breathable-membrane/ 301
+/tpu-waterproof-breathable-membrane-properties-applications-and-advantages.html /tpu-waterproof-breathable-membrane-properties-applications-and-advantages/ 301
+/tws-acoustic-vent-membrane.html /tws-acoustic-vent-membrane/ 301
+/tws-waterproof-breathable-membrane-solutions-for-earbuds.html /tws-waterproof-breathable-membrane-solutions-for-earbuds/ 301
+/walkie-talkie-speaker-waterproof-sound-membrane.html /walkie-talkie-speaker-waterproof-sound-membrane/ 301
+/waterproof-acoustic-membrane.html /waterproof-acoustic-membrane/ 301
+/waterproof-acoustic-membrane-tws-earbuds.html /waterproof-acoustic-membrane-tws-earbuds/ 301
+/waterproof-acoustic-mesh-design-guide-for-tws-earbuds.html /waterproof-acoustic-mesh-design-guide-for-tws-earbuds/ 301
+/waterproof-acoustic-vent-smart-watch.html /waterproof-acoustic-vent-smart-watch/ 301
+/waterproof-breathable-membrane.html /waterproof-breathable-membrane/ 301
+/waterproof-breathable-membrane-principle.html /waterproof-breathable-membrane-principle/ 301
+/waterproof-membrane-application-cases.html /waterproof-membrane-application-cases/ 301
+/waterproof-sound-membrane.html /waterproof-sound-membrane/ 301
+/waterproof-sound-permeable-membrane-tws-earphones-bluetooth-speakers.html /waterproof-sound-permeable-membrane-tws-earphones-bluetooth-speakers/ 301
+/waterproof-vent-membrane-outdoor-electronics.html /waterproof-vent-membrane-outdoor-electronics/ 301
+/wearable-electronics.html /wearable-electronics/ 301
+/wearable-waterproof-breathable-membrane.html /wearable-waterproof-breathable-membrane/ 301
+
+# --- Old tag URL redirects ---
+/tags/waterproof-sound-permeable-membrane/ /tags/acoustic-vent-membrane/ 301
+/tags/microphone-waterproof-acoustic-membrane/ /tags/sound-transmission-waterproof-film/ 301
+/tags/waterproof/ /tags/waterproof-membrane-principle/ 301
+/tags/waterproof-breathable-membrane/ /tags/eptfe-membrane/ 301
+
+# --- Duplicate page redirects ---
+/tpu-waterproof-breathable-membrane-2/ /tpu-waterproof-breathable-membrane/ 301
+/pu-waterproof-breathable-membrane-2/ /pu-waterproof-breathable-membrane/ 301
+/eptfe-waterproof-breathable-membrane-2/ /eptfe-waterproof-breathable-membrane/ 301
+/acoustic-vent-membrane-2/ /acoustic-vent-membrane/ 301
+/waterproof-breathable-membrane-2/ /waterproof-breathable-membrane/ 301
+/pressure-equalization-membrane-2/ /pressure-equalization-membrane/ 301
+/tpu-waterproof-breathable-membrane-3/ /tpu-waterproof-breathable-membrane/ 301
+
+# --- Google verification (keep accessible) ---
+/google35367d1f4b8b7898.html /google35367d1f4b8b7898.html 200
+
+# --- Legacy URL ---
+/breathability-waterproof-calculator.html /waterproof-breathable-membrane-principle/ 301
