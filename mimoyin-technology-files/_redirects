@@ -98,3 +98,5 @@
 # --- CRITICAL FIX: Manufacturing page 301 redirect ---
 # Issue: /manufacturing/ was renamed to /manufacturing-c
 ...(truncated)...
+  /manufacturing/ /manufacturing-capability/ 301
+  /manufacturing /manufacturing-capability/ 301
