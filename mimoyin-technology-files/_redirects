@@ -1,4 +1,4 @@
-﻿# Cloudflare Pages Redirect Rules
+# Cloudflare Pages Redirect Rules
 # Format: from to [status]
 
 # --- .html suffix redirects (301 permanent) ---
@@ -94,3 +94,76 @@
 
 # --- Legacy URL ---
 /breathability-waterproof-calculator.html /waterproof-breathable-membrane-principle/ 301
+
+# --- Manufacturing page rename (CRITICAL FIX) ---
+/manufacturing/ /manufacturing-capability/ 301
+/manufacturing /manufacturing-capability/ 301
+
+# --- Chinese-pinyin+English slug redirects (resolved) ---
+/dian-dong-ya-shua-xie-ya-ping-heng-tou-qi-mo-electric-toothbrush-pressure-balance-vent-membrane/ /electric-toothbrush-pressure-balance-vent-membrane/ 301
+/dian-dong-ya-shua-xie-ya-ping-heng-tou-qi-mo-electric-toothbrush-pressure-balance-vent-membrane /electric-toothbrush-pressure-balance-vent-membrane/ 301
+/dian-dong-ya-shua-xie-ya-ping-heng-tou-qi-mo-electric-toothbrush-pressure-balance-vent-membrane.html /electric-toothbrush-pressure-balance-vent-membrane/ 301
+/dui-jiang-ji-la-ba-fang-shui-tou-sheng-mo-walkie-talkie-speaker-waterproof-sound-membrane/ /walkie-talkie-speaker-waterproof-sound-membrane/ 301
+/dui-jiang-ji-la-ba-fang-shui-tou-sheng-mo-walkie-talkie-speaker-waterproof-sound-membrane /walkie-talkie-speaker-waterproof-sound-membrane/ 301
+/dui-jiang-ji-la-ba-fang-shui-tou-sheng-mo-walkie-talkie-speaker-waterproof-sound-membrane.html /walkie-talkie-speaker-waterproof-sound-membrane/ 301
+/eptfefang-shui-tou-qi-mo-shi-shi-me-cai-liao-de-what-material-is-eptfe-waterproof-breathable-membrane /eptfe-waterproof-breathable-membrane/ 301
+/eptfefang-shui-tou-qi-mo-shi-shi-me-cai-liao-de-what-material-is-eptfe-waterproof-breathable-membrane/ /eptfe-waterproof-breathable-membrane/ 301
+/eptfefang-shui-tou-qi-mo-shi-shi-me-cai-liao-de-what-material-is-eptfe-waterproof-breathable-membrane.html /eptfe-waterproof-breathable-membrane/ 301
+/fei-fu-fang-shui-tou-qi-mo-yu-eptfefang-shui-tou-qi-mo-you-na-xie-qu-bie-what-are-the-differences-between-fluorine-free-waterproof-vent-membrane-and-eptfe-waterproof-vent-membrane /fluorine-free-vs-eptfe-vent-membrane/ 301
+/fei-fu-fang-shui-tou-qi-mo-yu-eptfefang-shui-tou-qi-mo-you-na-xie-qu-bie-what-are-the-differences-between-fluorine-free-waterproof-vent-membrane-and-eptfe-waterproof-vent-membrane/ /fluorine-free-vs-eptfe-vent-membrane/ 301
+/fei-fu-fang-shui-tou-qi-mo-yu-eptfefang-shui-tou-qi-mo-you-na-xie-qu-bie-what-are-the-differences-between-fluorine-free-waterproof-vent-membrane-and-eptfe-waterproof-vent-membrane.html /fluorine-free-vs-eptfe-vent-membrane/ 301
+/zhi-neng-tou-kui-sheng-xue-micfang-shui-tou-sheng-mo-smart-helmet-acoustic-mic-waterproof-sound-membrane/ /smart-helmet-acoustic-mic-waterproof-sound-membrane/ 301
+/zhi-neng-tou-kui-sheng-xue-micfang-shui-tou-sheng-mo-smart-helmet-acoustic-mic-waterproof-sound-membrane.html /smart-helmet-acoustic-mic-waterproof-sound-membrane/ 301
+/ti-xu-dao-xie-ya-ping-heng-tou-qi-mo-shaver-pressure-balance-vent-membrane /shaver-pressure-balance-vent-membrane/ 301
+/ti-xu-dao-xie-ya-ping-heng-tou-qi-mo-shaver-pressure-balance-vent-membrane/ /shaver-pressure-balance-vent-membrane/ 301
+/ti-xu-dao-xie-ya-ping-heng-tou-qi-mo-shaver-pressure-balance-vent-membrane.html /shaver-pressure-balance-vent-membrane/ 301
+/la-ba-fang-shui-tou-sheng-mo-speaker-waterproof-sound-membrane /speaker-waterproof-sound-membrane/ 301
+/la-ba-fang-shui-tou-sheng-mo-speaker-waterproof-sound-membrane/ /speaker-waterproof-sound-membrane/ 301
+/la-ba-fang-shui-tou-sheng-mo-speaker-waterproof-sound-membrane.html /speaker-waterproof-sound-membrane/ 301
+/speaker-waterproof-sound-permeable-membrane /speaker-waterproof-sound-membrane/ 301
+/speaker-waterproof-sound-permeable-membrane/ /speaker-waterproof-sound-membrane/ 301
+/speaker-waterproof-sound-permeable-membrane.html /speaker-waterproof-sound-membrane/ 301
+/ding-wei-qi-di-ke-xie-ya-ping-heng-tou-qi-mo-ying-yong-chang-jing-application-scenarios-of-locator-bottom-shell-pressure-balance-vent-membrane.html /locator-bottom-shell-pressure-balance-vent-membrane/ 301
+/mi-tou-fang-shui-tou-qi-mo-mic-waterproof-vent-membrane.html /mic-waterproof-vent-membrane/ 301
+/yun-dong-xiang-ji-la-ba-fang-shui-tou-qi-mo-action-camera-speaker-waterproof-sound-membrane.html /action-camera-waterproof-sound-membrane/ 301
+/wearable-waterproof-breathable-membrane-solutions.html /wearable-waterproof-breathable-membrane/ 301
+/acoustic-vent-membrane-for-audio-devices /acoustic-vent-membrane/ 301
+/acoustic-vent-membrane-for-audio-devices/ /acoustic-vent-membrane/ 301
+/acoustic-vent-membrane-for-audio-devices.html /acoustic-vent-membrane/ 301
+/waterproof-acoustic-membrane-outdoor-electronics/ /waterproof-vent-membrane-outdoor-electronics/ 301
+/waterproof-acoustic-membrane-outdoor-electronics /waterproof-vent-membrane-outdoor-electronics/ 301
+/waterproof-acoustic-membrane-outdoor-electronics.html /waterproof-vent-membrane-outdoor-electronics/ 301
+/pu-waterproof-breathable-membrane-solutions.html /pu-waterproof-breathable-membrane/ 301
+/eptfe-vs-tpu-membrane-or-waterproof-breathable-film-comparison-guide.html /eptfe-vs-tpu-membrane-comparison-guide/ 301
+
+# --- Long-slug FAQ articles (consolidated to homepage) ---
+# These articles had Chinese-pinyin + long-English-question slugs
+# Content has been merged into other pages; redirect to homepage to recover equity
+/eptfefang-shui-tou-qi-mo-zai-xia-ji-gao-wen-bao-shai-xia-shi-fou-hui-lao-hua-shi-xiaowill-the-eptfe-waterproof-vent-membrane-age-and-fail-under-high-temperature-and-sunlight-exposure-in-summer/ / 301
+/eptfefang-shui-tou-qi-mo-zai-xia-ji-gao-wen-bao-shai-xia-shi-fou-hui-lao-hua-shi-xiaowill-the-eptfe-waterproof-vent-membrane-age-and-fail-under-high-temperature-and-sunlight-exposure-in-summer.html / 301
+/zhi-neng-ying-jian-han-shang-shi-cecai-yong-sheng-sun-1dbtou-sheng-moyu-yin-tong-hua-gu-zhang-fan-xiu-lu-xia-jiang-40actual-test-by-smart-hardware-manufacturers-adopting-sound-loss-1db-sound-permeable-membrane-reduces-the-repair-rate-of-voice-call / 301
+/zhi-neng-ying-jian-han-shang-shi-cecai-yong-sheng-sun-1dbtou-sheng-moyu-yin-tong-hua-gu-zhang-fan-xiu-lu-xia-jiang-40actual-test-by-smart-hardware-manufacturers-adopting-sound-loss-1db-sound-permeable-membrane-reduces-the-repair-rate-of-voice-call/ / 301
+/zhi-neng-ying-jian-han-shang-shi-cecai-yong-sheng-sun-1dbtou-sheng-moyu-yin-tong-hua-gu-zhang-fan-xiu-lu-xia-jiang-40actual-test-by-smart-hardware-manufacturers-adopting-sound-loss-1db-sound-permeable-membrane-reduces-the-repair-rate-of-voice-call.html / 301
+/eptfefang-shui-tong-yin-mo-zai-gao-wen-ri-shai-huan-jing-xia-sheng-xue-xing-neng-shi-fou-shuai-jianwill-the-acoustic-performance-of-eptfe-waterproof-sound-permeable-membrane-degrade-under-high-temperature-and-sunlight-exposure / 301
+/eptfefang-shui-tong-yin-mo-zai-gao-wen-ri-shai-huan-jing-xia-sheng-xue-xing-neng-shi-fou-shuai-jianwill-the-acoustic-performance-of-eptfe-waterproof-sound-permeable-membrane-degrade-under-high-temperature-and-sunlight-exposure/ / 301
+/eptfefang-shui-tong-yin-mo-zai-gao-wen-ri-shai-huan-jing-xia-sheng-xue-xing-neng-shi-fou-shuai-jianwill-the-acoustic-performance-of-eptfe-waterproof-sound-permeable-membrane-degrade-under-high-temperature-and-sunlight-exposure.html / 301
+/xie-ya-ping-heng-tou-qi-mo-tou-qi-liang-yi-ban-shi-duo-shao-mltou-qi-can-shu-xuan-xing-quan-jie-xi-what-is-the-common-air-permeability-ml-of-pressure-balance-vent-membrane-full-analysis-of-air-permeability-parameter-selection / 301
+/xie-ya-ping-heng-tou-qi-mo-tou-qi-liang-yi-ban-shi-duo-shao-mltou-qi-can-shu-xuan-xing-quan-jie-xi-what-is-the-common-air-permeability-ml-of-pressure-balance-vent-membrane-full-analysis-of-air-permeability-parameter-selection/ / 301
+/xie-ya-ping-heng-tou-qi-mo-tou-qi-liang-yi-ban-shi-duo-shao-mltou-qi-can-shu-xuan-xing-quan-jie-xi-what-is-the-common-air-permeability-ml-of-pressure-balance-vent-membrane-full-analysis-of-air-permeability-parameter-selection.html / 301
+/fang-shui-tou-sheng-mo-zai-hu-wai-gao-wen-bao-shai-hou-yin-zhi-hui-bian-chai-mawill-the-sound-quality-of-waterproof-sound-permeable-membrane-deteriorate-after-long-term-outdoor-high-temperature-exposure/ / 301
+/fang-shui-tou-sheng-mo-zai-hu-wai-gao-wen-bao-shai-hou-yin-zhi-hui-bian-chai-mawill-the-sound-quality-of-waterproof-sound-permeable-membrane-deteriorate-after-long-term-outdoor-high-temperature-exposure.html / 301
+/she-bei-yan-fa-xuan-xing-xie-ya-tou-qi-mo-qian-bi-xu-li-qing-de-6da-cai-zhi-guan-jian-wen-ti-6-key-material-issues-that-must-be-clarified-before-equipment-randd-selects-pressure-relief-vent-membranes/ / 301
+/she-bei-yan-fa-xuan-xing-xie-ya-tou-qi-mo-qian-bi-xu-li-qing-de-6da-cai-zhi-guan-jian-wen-ti-6-key-material-issues-that-must-be-clarified-before-equipment-randd-selects-pressure-relief-vent-membranes.html / 301
+/xie-ya-ping-heng-tou-qi-mo-ru-he-shi-xian-ip68fang-shui-tong-shi-kuai-su-ping-heng-qiang-ti-qi-yaji-shu-yuan-li-xiang-jie-she-bei-han-shang-cai-gou-xie-ya-ping-heng-tou-qi-mo-qian-bi-xu-kao-lu-de-6ge-wen-ti/ / 301
+/xie-ya-ping-heng-tou-qi-mo-ru-he-shi-xian-ip68fang-shui-tong-shi-kuai-su-ping-heng-qiang-ti-qi-yaji-shu-yuan-li-xiang-jie-she-bei-han-shang-cai-gou-xie-ya-ping-heng-tou-qi-mo-qian-bi-xu-kao-lu-de-6ge-wen-ti.html / 301
+/ru-he-xuan-ze-gua-he-de-xie-ya-ping-heng-tou-qi-moxuan-xing-he-xin-yao-dian-quan-jie-xi-dian-zi-chan-pin-xuan-xing-xie-ya-ping-heng-tou-qi-mo-qian-bi-xu-kao-lu-de-6ge-guan-jian-yao-su-how-to-select-the-suitable-.html / 301
+/tags/ip68/ /tags/waterproof-membrane-principle/ 301
+
+# --- Broken internal links from Publii template (URL nesting) ---
+# These are URL strings with nested full domain; they were generated by a template bug
+# Map them to the actual target page based on the slug portion
+/https://www.mimoyin.com/tws-waterproof-breathable-membrane-solutions-for-earbuds/ /tws-waterproof-breathable-membrane-solutions-for-earbuds/ 301
+/https://www.mimoyin.com/dui-jiang-ji-la-ba-fang-shui-tou-sheng-mo-walkie-talkie-speaker-waterproof-sound-membrane.html /walkie-talkie-speaker-waterproof-sound-membrane/ 301
+
+# --- Duplicate path (caught and merged) ---
+/tpu-waterproof-breathable-membrane/tpu-waterproof-breathable-membrane/ /tpu-waterproof-breathable-membrane/ 301
