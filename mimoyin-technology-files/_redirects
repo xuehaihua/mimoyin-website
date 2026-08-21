@@ -92,8 +92,19 @@
 # --- Google verification (keep accessible) ---
 /google35367d1f4b8b7898.html /google35367d1f4b8b7898.html 200
 
+# --- Homepage .html redirect ---
+/index.html / 301
+
 # --- Legacy URL ---
 /breathability-waterproof-calculator.html /waterproof-breathable-membrane-principle/ 301
+
+# --- Manufacturing page rename (CRITICAL FIX) ---
+/manufacturing/ /manufacturing-capability/ 301
+/manufacturing /manufacturing-capability/ 301
+
+# --- Singular vs plural URL fix ---
+/eptfe-waterproof-breathable-membrane-industrial-solution/ /eptfe-waterproof-breathable-membrane-industrial-solutions/ 301
+/eptfe-waterproof-breathable-membrane-industrial-solution /eptfe-waterproof-breathable-membrane-industrial-solutions/ 301
 
 # --- Manufacturing page rename (CRITICAL FIX) ---
 /manufacturing/ /manufacturing-capability/ 301
@@ -135,6 +146,8 @@
 /waterproof-acoustic-membrane-outdoor-electronics.html /waterproof-vent-membrane-outdoor-electronics/ 301
 /pu-waterproof-breathable-membrane-solutions.html /pu-waterproof-breathable-membrane/ 301
 /eptfe-vs-tpu-membrane-or-waterproof-breathable-film-comparison-guide.html /eptfe-vs-tpu-membrane-comparison-guide/ 301
+/eptfe-vs-tpu-membrane-or-waterproof-breathable-film-comparison-guide/ /eptfe-vs-tpu-membrane-comparison-guide/ 301
+/eptfe-vs-tpu-membrane-or-waterproof-breathable-film-comparison-guide /eptfe-vs-tpu-membrane-comparison-guide/ 301
 
 # --- Long-slug FAQ articles (consolidated to homepage) ---
 # These articles had Chinese-pinyin + long-English-question slugs
