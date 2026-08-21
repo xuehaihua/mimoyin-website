@@ -1,4 +1,4 @@
-﻿# Cloudflare Pages Redirect Rules
+# Cloudflare Pages Redirect Rules
 # Format: from to [status]
 
 # --- .html suffix redirects (301 permanent) ---
@@ -94,3 +94,7 @@
 
 # --- Legacy URL ---
 /breathability-waterproof-calculator.html /waterproof-breathable-membrane-principle/ 301
+
+# --- CRITICAL FIX: Manufacturing page 301 redirect ---
+# Issue: /manufacturing/ was renamed to /manufacturing-c
+...(truncated)...
