@@ -1,0 +1,6 @@
+# Cloudflare Pages Redirect Rules (Chinese site)
+
+# 301 for removed AI-generated posts (10 / 11 / 19)
+/she-bei-yan-fa-xuan-xing-xie-ya-tou-qi-mo-qian-bi-xu-li-qing-de-6da-cai-zhi-guan-jian-wen-ti-6.html /eptfe-fang-shui-tou-qi-mo-yu-pu-fang-shui-tou-qi-mo-de-qu-bie-dui-bi.html 301
+/xie-ya-ping-heng-tou-qi-mo-tou-qi-liang-yi-ban-shi-duo-shao-mltou-qi-can-shu-xuan-xing-quan-jie-xi.html /fang-shui-tou-sheng-mo-biao-zhun-tou-qi-liang-can-shu-gui-fan.html 301
+/ru-he-xuan-ze-gua-he-de-xie-ya-ping-heng-tou-qi-moxuan-xing-he-xin-yao-dian-quan-jie-xi-dian-zi-chan-pin-xuan-xing-xie-ya-ping-heng-tou-qi-mo-qian-bi-xu-kao-lu-de-6ge-guan-jian-yao-su.html /fang-shui-tou-sheng-mo-xuan-xing-zhi-nan-cong-ip-fang-hu-deng-ji-dao-sheng-xue-xing-neng-can-shu-quan-jie-xi.html 301
