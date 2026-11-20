@@ -8235,26 +8235,6 @@
         "md5": "92360b2b90bef5a7403bf6cda65b9330"
     },
     {
-        "path": "pressure-balance-vent-membrane-ml-air-permeability",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/pressure-balance-vent-membrane-ml-air-permeability/index.html",
-        "type": "file",
-        "md5": "2c7f2322270b48443ec5275af30c760c"
-    },
-    {
-        "path": "pressure-balance-vent-membrane-selection-guide",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/pressure-balance-vent-membrane-selection-guide/index.html",
-        "type": "file",
-        "md5": "744569e4687297ebcdf4c2333ad0c595"
-    },
-    {
         "path": "pressure-equalization-membrane",
         "type": "directory",
         "md5": false
@@ -8283,16 +8263,6 @@
         "path": "/pressure-equalization-vent-membrane-specifications/index.html",
         "type": "file",
         "md5": "4ee2cf07f463f1fcb450f9608df21784"
-    },
-    {
-        "path": "pressure-relief-vent-membrane-material-comparison",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/pressure-relief-vent-membrane-material-comparison/index.html",
-        "type": "file",
-        "md5": "e46385c6c7f62fe9169e578bd6b88073"
     },
     {
         "path": "pu-waterproof-breathable-membrane",
