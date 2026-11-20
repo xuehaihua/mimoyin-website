@@ -170,3 +170,8 @@
 /pressure-relief-vent-membrane-material-comparison/ /eptfe-waterproof-breathable-membrane/ 301
 /pressure-balance-vent-membrane-ml-air-permeability/ /eptfe-waterproof-breathable-membrane/ 301
 /pressure-balance-vent-membrane-selection-guide/ /pressure-equalization-vent-membrane/ 301
+
+# bare-path fallbacks for deleted posts (catch Cloudflare .html strip)
+/pressure-relief-vent-membrane-material-comparison  /eptfe-waterproof-breathable-membrane/  301
+/pressure-balance-vent-membrane-ml-air-permeability  /eptfe-waterproof-breathable-membrane/  301
+/pressure-balance-vent-membrane-selection-guide  /pressure-equalization-vent-membrane/  301
