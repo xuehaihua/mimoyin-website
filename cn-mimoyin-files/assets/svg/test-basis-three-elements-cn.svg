@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="860" height="420" role="img" aria-labelledby="ttl desc">
+<title id="ttl">透气量可比的三要素</title><desc id="desc">固定面积、固定压差、总流量报告三项测试要素示意</desc>
+<rect width="860" height="420" rx="12" fill="#ffffff"/>
+<rect x="1" y="1" width="858" height="418" rx="11" fill="none" stroke="#d8e2ec" stroke-width="2"/>
+<text x="30" y="44" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="22" font-weight="700" fill="#16324f">透气量可比，必须写全三要素</text>
+<text x="830" y="42" text-anchor="end" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="12" letter-spacing="1" fill="#8a99a8">原理示意 - 非实测数据</text>
+<line x1="30" y1="60" x2="830" y2="60" stroke="#e6edf4" stroke-width="1.5"/>
+
+<rect x="30" y="92" width="250" height="180" rx="10" fill="#f6f9fc" stroke="#a7b8c8" stroke-width="2"/>
+<circle cx="155" cy="168" r="34" fill="#ffffff" stroke="#1a6db8" stroke-width="2.5"/>
+<text x="155" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="17" font-weight="700" fill="#1a6db8">&#216;10</text>
+<text x="155" y="222" text-anchor="middle" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="16" font-weight="600" fill="#16324f">一、固定面积</text>
+<text x="155" y="248" text-anchor="middle" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="13" fill="#5b7288">测试孔径，不是产品尺寸</text>
+
+<rect x="305" y="92" width="250" height="180" rx="10" fill="#f6f9fc" stroke="#a7b8c8" stroke-width="2"/>
+<text x="430" y="150" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="700" fill="#1a6db8">7 kPa</text>
+<text x="430" y="196" text-anchor="middle" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="16" font-weight="600" fill="#16324f">二、固定压差</text>
+<text x="430" y="222" text-anchor="middle" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="13" fill="#5b7288">膜两侧的压差</text>
+<text x="430" y="244" text-anchor="middle" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="13" fill="#5b7288">= 70 mbar</text>
+
+<rect x="580" y="92" width="250" height="180" rx="10" fill="#f6f9fc" stroke="#a7b8c8" stroke-width="2"/>
+<text x="705" y="150" text-anchor="middle" font-family="system-ui,sans-serif" font-size="24" font-weight="700" fill="#1a6db8">ml/min</text>
+<text x="705" y="196" text-anchor="middle" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="16" font-weight="600" fill="#16324f">三、总流量</text>
+<text x="705" y="222" text-anchor="middle" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="13" fill="#5b7288">整个测试孔通过的流量</text>
+<text x="705" y="244" text-anchor="middle" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="13" fill="#5b7288">不是 ml/min/cm&#178;</text>
+
+<rect x="30" y="300" width="800" height="88" rx="8" fill="#fff6ed" stroke="#e8c9a0" stroke-width="1.5"/>
+<text x="46" y="326" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" fill="#9a5b10">可比写法：ml/min @ &#216;10 mm @ 7 kPa</text>
+<text x="46" y="352" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="13" fill="#7a5a38">单位面积通量与固定孔口总流量相差数量级，绝不能直接并列比较。</text>
+<text x="46" y="374" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="13" fill="#7a5a38">模切件的流量按图纸匹配，上面的材料级数字不是成品实测值。</text>
+</svg>

@@ -11,6 +11,44 @@
   },
   "items": [
     {
+      "id": "https://www.cn.mimoyin.com/wei-shen-me-tou-qi-liang-biao-zhu-7kpa-10mm.html",
+      "url": "https://www.cn.mimoyin.com/wei-shen-me-tou-qi-liang-biao-zhu-7kpa-10mm.html",
+      "title": "为什么 ePTFE 透气膜参数必须标明 Ø10mm 与 7kPa 测试口径？",
+      "summary": "单位面积通量与固定孔口总流量的误区、Ø10mm/7kPa/总流量三要素、采购核查清单与 RoHS 已测、REACH 不宣称的合规口径。",
+      "content_html": "<nav><a href=\"/\">首页</a> / <a href=\"/eptfefang-shui-tou-qi-mo-shi-shi-me-cai-liao-de.html\">防水透气膜</a> / 透气量测试口径</nav>\n<h1>为什么 ePTFE 透气膜参数必须标明 Ø10mm 与 7kPa 测试口径？</h1>\n<p class=\"fig-note\">本文图片均为原理示意图，不是产品实物照片，也不代表实测数据。</p>\n\n<p class=\"note\">先说边界：下面讨论的数字都是米摩音提供的<strong>膜材材料级测试值</strong>，用于装在 vent 后面或模切件内部，不是整机成品的实测结果。</p>\n\n<h2>一、最常见的误区：只有一个数字</h2>\n<p>一份规格书只写\"透气量 5000 ml/min\"，其实几乎说明不了问题。透气膜流量取决于测试开孔多大、用多大压差推动空气、膜面积、厚度和温度。其中任何一项变化，数字都会变，而且往往差很多。</p>\n<p>采购对比时最常见的错误，是把不同测法得到的数字当成同一单位来比。造成混乱的主要是两种写法：</p>\n<ul>\n<li><strong>单位面积通量</strong>：写成 ml/min/cm²（或 ml/cm²/min），表示每平方厘米膜的流量。</li>\n<li><strong>固定孔口总流量</strong>：写明孔径和压差下的 ml/min，表示整个测试孔通过的总流量。</li>\n</ul>\n<p class=\"note\">这是两个不同物理量，数值相差数量级，没有诚实的办法把它们放进同一列直接比较。</p>\n\n<h2>二、必须写全的三要素</h2>\n<p>一个可比的透气量数字要带三项信息。我们的材料级口径是 <strong>ml/min @ Ø10mm @ 7kPa</strong>。</p>\n\n<figure class=\"article-figure\" data-figure=\"basis\">\n<img src=\"/assets/svg/test-basis-three-elements-cn.svg\" alt=\"透气量可比三要素：固定面积、固定压差、总流量示意图\" width=\"860\" height=\"420\" loading=\"lazy\">\n<figcaption>透气量可比的三要素示意，非实测数据。</figcaption>\n</figure>\n\n<h3>固定面积 —— Ø10mm 是什么意思</h3>\n<p>Ø10mm 是测试孔径，用来固定测试面积，让不同实验室的结果指向同一件事。它是测试工装的属性，不是客户产品尺寸：防爆阀上的膜片可能远小于或大于 10mm。把测试孔径误当成产品尺寸，是选型时最常见的误判来源。</p>\n\n<h3>固定压差 —— 7kPa 是什么意思</h3>\n<p>7kPa（70mbar）是测试时施加在膜两侧的压差。流量随压差上升，所以不同压差下测到的值其实是不同结果。写明压差，采购才能判断这个数字是否贴近壳体实际遇到的压力波动。</p>\n\n<h3>总流量 —— 从 ml/min 到模切件</h3>\n<p>ml/min 是每分钟通过整个测试孔的空气总体积。对模切件来说，流量随可用膜面积和零件几何变化，最终件的透气量要按图纸匹配并在客户接口上验证。材料级数字只是起点参考，不是成品实测值。</p>\n\n<h2>三、给采购的供应商数据核查清单</h2>\n<p>拿到两份规格书，先按下面几问过一遍，再谈比较：</p>\n<ol>\n<li>写明测试孔径了吗？没写，面积就未知。</li>\n<li>写明压差了吗？没写，推动力就未知。</li>\n<li>单位是单位面积通量还是固定孔口总流量？不要混用。</li>\n<li>数字是材料级值还是成品件实测值？</li>\n<li>耐水压、背胶耐温与膜材耐温是否分开报告？</li>\n<li>有没有批次检测记录，报告能否索取？</li>\n</ol>\n<p>想理解这些数字背后的工程逻辑，可读<a href=\"/tou-qi-liang-yu-nai-shui-ya-gong-cheng-quan-heng.html\">透气量与耐水压工程权衡</a>和<a href=\"/fang-bao-fa-tou-qi-mo-xuan-xing-qing-dan.html\">防爆阀内部透气膜选型清单</a>。</p>\n\n<figure class=\"article-figure\" data-figure=\"orifice\">\n<img src=\"/assets/svg/airflow-test-orifice-cn.svg\" alt=\"7kPa 压差下经 Ø10mm 测试孔测量透气量的口径示意图\" width=\"860\" height=\"420\" loading=\"lazy\">\n<figcaption>固定孔口透气量测试口径示意，非设备照片，也非实测数据。</figcaption>\n</figure>\n\n<h2>四、合规与报告说明</h2>\n<p>RoHS 已检测，报告可索取。REACH 材料可以满足，但目前未做测试，因此我们不进行 REACH 合规宣称，也不会把未经测试的合规状态写进资料。我们同样不宣称未取得的认证。模切样品和刀模按图纸与工艺收费，运费按货代实际收费实报实销，常规件 3–5 个工作日打样。</p>\n\n<h2>常见问题</h2>\n<h3>为什么不能把 ml/min/cm² 和 ml/min 直接比较？</h3>\n<p>两者是不同物理量：单位面积通量与固定孔口总流量相差数量级，不能直接比较。</p>\n<h3>透气量里的 Ø10mm 是什么意思？</h3>\n<p>测试孔径，不是产品尺寸。写明它就固定了测试面积，不同实验室的结果才有可比性。</p>\n\n<p>要让透气量数字和你的图纸对上？<a href=\"/contact.html\">把孔位结构和测试条件发给工程团队</a>。</p>\n\n<h2>延伸阅读</h2>\n<ul>\n<li><a href=\"/tou-qi-liang-yu-nai-shui-ya-gong-cheng-quan-heng.html\">透气量与耐水压工程权衡</a></li>\n<li><a href=\"/fang-bao-fa-tou-qi-mo-xuan-xing-qing-dan.html\">防爆阀内部透气膜选型清单</a></li>\n<li><a href=\"/fang-shui-tou-sheng-mo-biao-zhun-tou-qi-liang-can-shu-gui-fan.html\">ePTFE 膜材测试口径说明</a></li>\n</ul>",
+      "image": "",
+      "author": {
+        "name": "米摩音"
+      },
+      "tags": [
+        "ePTFE 防水透气膜",
+        "透气量测试口径",
+        "7kPa",
+        "RoHS"
+      ],
+      "date_published": "2026-11-21T17:20:00+08:00",
+      "date_modified": "2026-11-21T17:20:00+08:00"
+    },
+    {
+      "id": "https://www.cn.mimoyin.com/tou-qi-liang-yu-nai-shui-ya-gong-cheng-quan-heng.html",
+      "url": "https://www.cn.mimoyin.com/tou-qi-liang-yu-nai-shui-ya-gong-cheng-quan-heng.html",
+      "title": "透气量与耐水压如何做工程权衡：防爆阀 ePTFE 膜材选型指南",
+      "summary": "透气量越高耐水压越低背后的物理权衡、不同工况取舍与统一 7kPa/Ø10mm 测试口径。米摩音只做阀内膜材，按图纸打样。",
+      "content_html": "<nav><a href=\"/\">首页</a> / <a href=\"/eptfefang-shui-tou-qi-mo-shi-shi-me-cai-liao-de.html\">防水透气膜</a> / 透气量与耐水压权衡</nav>\n<h1>透气量与耐水压如何做工程权衡：防爆阀 ePTFE 膜材选型指南</h1>\n<p class=\"fig-note\">本文图片均为原理示意图，不是产品实物照片，也不代表实测数据。</p>\n\n<p class=\"note\">先说边界：深圳市米摩音科技有限公司提供的是<strong>装在防爆阀里面的透气膜材</strong>与精密模切件，不生产阀体或成品透气件。以下均为膜材材料级参考区间，最终档位按客户图纸匹配。</p>\n\n<h2>一、为什么两个目标天然反向</h2>\n<p>防水透气膜要做的事听起来矛盾：让气体通过，把液态水挡在外面。这两个表现来自同一套微孔结构。孔径大小和开孔率既决定空气分子多容易扩散通过，也决定要把水压进并压穿这些孔需要多大压力。</p>\n<p>把结构放开，透气量上升，耐水压下降；把结构收紧，防水变好，泄压变慢。没有一种膜材能在两端都最优，所以每一份实际规格都是围绕某个壳体、某种暴露工况做的折中。</p>\n<p>起决定作用的变量主要有三个：</p>\n<ul>\n<li><strong>孔径与分布</strong>：孔径更大、更均匀，流量更高，但水被压穿的门槛更低。</li>\n<li><strong>开孔率与厚度</strong>：单位厚度上开放面积越大流量越高；膜更厚则对气体和液体都增加阻力。</li>\n<li><strong>表面能</strong>：ePTFE 固有的低表面能让微孔疏水，因此孔大到能过气，仍能抵抗浸润。</li>\n</ul>\n\n<figure class=\"article-figure\" data-figure=\"tradeoff\">\n<img src=\"/assets/svg/airflow-water-tradeoff-cn.svg\" alt=\"透气量上升、耐水压下降的定性权衡曲线示意图\" width=\"860\" height=\"420\" loading=\"lazy\">\n<figcaption>透气量与耐水压的定性权衡示意，非实测数据；具体档位按客户图纸匹配。</figcaption>\n</figure>\n\n<h2>二、不同工况先保哪一个</h2>\n<p>正确的平衡点取决于壳体实际遇到什么。可以先用下面的规则起步，再按真实测试条件验证：</p>\n<table>\n<thead><tr><th>工况</th><th>优先保证</th><th>理由</th></tr></thead>\n<tbody>\n<tr><td>快速压力波动（热循环下的密闭壳体）</td><td>透气量</td><td>气体要快速平衡，否则壳体鼓胀或内凹。</td></tr>\n<tr><td>积水、高压水枪冲洗或溅水</td><td>耐水压</td><td>受压液态水是最主要失效模式。</td></tr>\n<tr><td>麦克风 / 扬声器开孔</td><td>声损与透气量一起看</td><td>声音要以尽可能小的损耗通过，同时保持透气。</td></tr>\n<tr><td>盐雾、粉尘或油污环境</td><td>表面防护与档位余量</td><td>污染物会慢慢堵塞暴露面，使透气量衰减。</td></tr>\n</tbody>\n</table>\n<p class=\"note\">IP67/IP68 是整机测试结果，不是膜材参数。壳体密封、垫片压缩和背胶贴合，对最终结果的影响不比膜材本身小。</p>\n\n<h2>三、把两个目标放到同一测试口径</h2>\n<p>透气量只有在写明测试条件时才有意义。我们的材料级口径是 <strong>7kPa 压差、Ø10mm 测试孔的总流量（ml/min）</strong>；Ø10mm 是测试工具孔径，不是客户产品尺寸。耐水压按材料级水柱高度报告，对照最严苛的涉水工况。</p>\n<p>拿两家供应商比较时，务必确认数字用的是同一孔径、同一压差、同一报告方式。单位面积通量与固定孔口总流量相差数量级，绝不能当成同一单位并列比较——这也是选型时最容易踩的坑。</p>\n<figure class=\"article-figure\" data-figure=\"orifice\">\n<img src=\"/assets/svg/airflow-test-orifice-cn.svg\" alt=\"7kPa 压差下经 Ø10mm 测试孔测量透气量的口径示意图\" width=\"860\" height=\"420\" loading=\"lazy\">\n<figcaption>固定孔口透气量测试口径示意（Ø10mm 测试孔、7kPa 压差），非设备照片，也非实测数据。</figcaption>\n</figure>\n\n<h2>四、我们的供货边界与打样</h2>\n<p>我们做的是装在 vent 后面的 ePTFE 膜材与精密模切件，不做阀体或成品透气组件。圆形、方形、异形轮廓均可按客户图纸模切。打样按接口图走：先确认孔径、可贴合胶宽和背胶体系，再出样并按材料级口径报告透气量与耐水压。常规件 3–5 个工作日打样；样品和刀模按图纸与工艺收费，运费按货代实际收费实报实销。可提供 RoHS 报告，我们不进行 REACH 合规宣称。</p>\n\n<h2>五、出图前的核对清单</h2>\n<ul>\n<li>透气量：按 7kPa / Ø10mm 口径写明目标区间，标注\"按图纸定制\"。</li>\n<li>耐水压：材料级水柱高度，对照最严苛涉水工况。</li>\n<li>背胶：胶系、耐温上限、胶宽单独写清，不与膜材耐温混写。</li>\n<li>模切：外形公差、离型方式、卷料或片料要求来自装配图。</li>\n<li>老化：盐雾、高低温循环、双 85 的验收条件先约定。</li>\n</ul>\n\n<h2>常见问题</h2>\n<h3>为什么透气量越高耐水压越低？</h3>\n<p>两者由同一套微孔结构决定。孔径更大或开孔率更高，气体通过更快，但水被压穿所需压力也更低，两个目标反向变化。</p>\n<h3>对比透气量要用什么口径？</h3>\n<p>写明压差和孔径，例如 7kPa 压差、Ø10mm 测试孔下的 ml/min 总流量。没有这两个条件就不能横比。</p>\n\n<p>要把档位和你的壳体对上？<a href=\"/contact.html\">把图纸和测试条件发给工程团队</a>，或先看<a href=\"/fang-bao-fa-tou-qi-mo-xuan-xing-qing-dan.html\">防爆阀内部透气膜选型清单</a>。</p>\n\n<h2>延伸阅读</h2>\n<ul>\n<li><a href=\"/fang-bao-fa-tou-qi-mo-xuan-xing-qing-dan.html\">防爆阀内部 ePTFE 膜材选型清单</a></li>\n<li><a href=\"/fang-shui-tou-sheng-mo-biao-zhun-tou-qi-liang-can-shu-gui-fan.html\">ePTFE 膜材测试口径说明</a></li>\n<li><a href=\"/ti-xu-dao-xie-ya-ping-heng-tou-qi-mo.html\">定制模切服务</a></li>\n</ul>",
+      "image": "",
+      "author": {
+        "name": "米摩音"
+      },
+      "tags": [
+        "ePTFE 防水透气膜",
+        "透气量",
+        "耐水压",
+        "防爆阀透气膜"
+      ],
+      "date_published": "2026-11-21T17:20:00+08:00",
+      "date_modified": "2026-11-21T17:20:00+08:00"
+    },
+    {
       "id": "https://www.cn.mimoyin.com/fang-bao-fa-tou-qi-mo-xuan-xing-qing-dan.html",
       "url": "https://www.cn.mimoyin.com/fang-bao-fa-tou-qi-mo-xuan-xing-qing-dan.html",
       "title": "防爆阀内部透气膜怎么选：ePTFE 膜材选型清单",

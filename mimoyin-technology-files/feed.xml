@@ -1712,4 +1712,155 @@
 <li><a href="/how-to-choose-the-right-waterproof-breathable-membrane-for-your-electronics-application/">Choosing a waterproof breathable membrane for electronics</a></li>
 </ul> ]]></content>
     </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Balance Airflow and Water Entry Pressure in ePTFE Vent Membranes]]></title>
+        <id>https://www.mimoyin.com/airflow-vs-water-entry-pressure-tradeoff/</id>
+        <link href="https://www.mimoyin.com/airflow-vs-water-entry-pressure-tradeoff/" rel="alternate" type="text/html"/>
+        <updated>2026-11-21T17:20:00+08:00</updated>
+        <published>2026-11-21T17:20:00+08:00</published>
+        <summary type="html"><![CDATA[Engineering guide to the airflow / water-entry trade-off: microporous structure, application priorities and the fixed Ø10 mm / 7 kPa test basis. Custom per drawing.]]></summary>
+        <content type="html"><![CDATA[ <nav><a href="/">Home</a> / <a href="/eptfe-waterproof-breathable-membrane/">Membranes</a> / Airflow vs water entry</nav>
+<h1>How to Balance Airflow and Water Entry Pressure in ePTFE Vent Membranes</h1>
+<p class="fig-note">Figures are schematic illustrations only; they are not photographs of products or measured data.</p>
+
+<p class="note">Scope: this article is about the <strong>membrane material</strong> used behind a vent, not a finished valve or vent-pad assembly. Values are material-level reference ranges; the final grade is matched to the customer's drawing.</p>
+
+<h2>1. Why the two targets pull against each other</h2>
+<p>A waterproof breathable membrane has one job that sounds like a contradiction: let gas pass, keep liquid water out. Both behaviours come from the same microporous structure. Pore size and open porosity decide how easily air molecules diffuse through, and they also decide how much pressure it takes to force water into and through those pores.</p>
+<p>Open the structure up and airflow rises, but the water entry pressure drops. Tighten it and water resistance improves, but pressure equalisation slows down. There is no single membrane that is best at both ends, which is why every real specification is a compromise tied to one enclosure and one exposure condition.</p>
+<p>Three variables do most of the work:</p>
+<ul>
+<li><strong>Pore size and distribution</strong> — larger, more uniform pores raise flow but lower the threshold at which water is pressed through.</li>
+<li><strong>Open porosity and thickness</strong> — more open area per unit thickness raises flow; a thicker film adds resistance to both gas and liquid.</li>
+<li><strong>Surface energy</strong> — the inherently low surface energy of ePTFE is what makes the pores hydrophobic, so a pore that is large enough to pass gas still resists wetting.</li>
+</ul>
+
+<figure class="article-figure" data-figure="tradeoff">
+<img src="/assets/svg/airflow-water-tradeoff-en.svg" alt="Schematic qualitative curve showing airflow rising as water entry pressure falls" width="860" height="420" loading="lazy">
+<figcaption>Qualitative trade-off between airflow and water entry pressure - schematic only, not measured data. Actual grades are matched to each drawing.</figcaption>
+</figure>
+
+<h2>2. Which target comes first, by application</h2>
+<p>The right balance depends on what the enclosure actually sees. Use these rules as a starting point, then verify against the real test conditions:</p>
+<table>
+<thead><tr><th>Application condition</th><th>Prioritise</th><th>Reasoning</th></tr></thead>
+<tbody>
+<tr><td>Fast pressure swings (sealed housings under thermal cycling)</td><td>Airflow</td><td>Gas must equalise quickly or the housing bulges or collapses.</td></tr>
+<tr><td>Standing water, pressure washing or splash exposure</td><td>Water entry pressure</td><td>Liquid water under pressure is the dominant failure mode.</td></tr>
+<tr><td>Microphone / speaker openings</td><td>Acoustic loss together with airflow</td><td>Sound must pass with minimal loss while the port stays breathable.</td></tr>
+<tr><td>Salt mist, dust or oil exposure</td><td>Face protection and grade margin</td><td>Contaminants slowly block the exposed face and drift airflow.</td></tr>
+</tbody>
+</table>
+<p class="note">IP67/IP68 is a result of the whole enclosure, not a membrane rating. Housing seal, gasket compression and adhesive bonding affect the final result as much as the film itself.</p>
+
+<h2>3. Put both targets on one test basis</h2>
+<p>Airflow is only meaningful when the test conditions are stated. Our material-level basis is <strong>ml/min at a Ø10 mm orifice under 7 kPa differential pressure</strong> — the total flow through a fixed test port, not a per-area value. Ø10 mm is the test tool aperture, not a customer product dimension.</p>
+<p>Water entry pressure is reported as a material-level water column, matched to the worst-case exposure. When you compare two suppliers, make sure both numbers use the same orifice, pressure and reporting method. A per-area flux value and a fixed-orifice total flow differ by orders of magnitude and must never be placed side by side as if they were the same unit.</p>
+<figure class="article-figure" data-figure="orifice">
+<img src="/assets/svg/airflow-test-orifice-en.svg" alt="Schematic of a fixed 10 mm test orifice under 7 kPa differential pressure" width="860" height="420" loading="lazy">
+<figcaption>Fixed-orifice airflow test basis (10 mm orifice, 7 kPa) - schematic only, not a photo of test equipment or measured data.</figcaption>
+</figure>
+
+<h2>4. What we supply and how sampling works</h2>
+<p>We supply the ePTFE membrane material and precision die-cut parts that sit behind the vent — not the valve body or a finished vent assembly. Round, rectangular and irregular outlines are die-cut to the customer's drawing.</p>
+<p>Sampling follows the interface drawing: confirm port diameter, available bonding land and adhesive system, then produce a sample lot and report airflow and water entry as material-level values. Standard parts are sampled in 3–5 working days. Samples and die-tooling are charged per drawing and process; freight is billed at the actual forwarder cost. RoHS documentation is available on request, and we do not make REACH compliance claims.</p>
+
+<h2>5. Checklist before you release a drawing</h2>
+<ul>
+<li>Airflow: target range at Ø10 mm / 7 kPa, stated as custom per spec.</li>
+<li>Water entry: material-level water column matched to the worst-case exposure.</li>
+<li>Adhesive: chemical family, temperature limit and bond width called out separately from film temperature.</li>
+<li>Die-cut: outline tolerance and liner/winding requirements from the assembly drawing.</li>
+<li>Aging: salt mist, thermal cycling and damp heat conditions agreed before volume order.</li>
+</ul>
+
+<h2>FAQ</h2>
+<h3>Why does higher airflow usually mean lower water entry pressure?</h3>
+<p>Both come from the same microporous structure. Larger pores or higher porosity pass gas faster but let water through at a lower pressure, so the two targets move against each other.</p>
+<h3>What test basis should I use to compare airflow?</h3>
+<p>State the pressure and orifice, for example ml/min at a Ø10 mm orifice under 7 kPa. A number without both is not comparable between suppliers.</p>
+
+<p>Need to match a grade to your enclosure? <a href="/contact/">Send your drawing and test conditions to our engineering team</a>, or read the <a href="/battery-vent-pad-membrane-spec-checklist/">battery vent pad membrane specification checklist</a> first.</p>
+
+<h2>Related reading</h2>
+<ul>
+<li><a href="/battery-vent-pad-membrane-spec-checklist/">Battery vent pad membrane specification checklist</a></li>
+<li><a href="/eptfe-waterproof-breathable-membrane-specifications/">ePTFE membrane specifications and test methods</a></li>
+<li><a href="/pressure-equalization-vent-membrane/">Pressure equalization membrane guide</a></li>
+</ul> ]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why ePTFE Vent Membrane Airflow Requires Fixed Ø10 mm and 7 kPa Test Standards]]></title>
+        <id>https://www.mimoyin.com/why-airflow-needs-fixed-test-basis/</id>
+        <link href="https://www.mimoyin.com/why-airflow-needs-fixed-test-basis/" rel="alternate" type="text/html"/>
+        <updated>2026-11-21T17:20:00+08:00</updated>
+        <published>2026-11-21T17:20:00+08:00</published>
+        <summary type="html"><![CDATA[Why airflow must state ml/min @ Ø10 mm @ 7 kPa, with a supplier-data comparison checklist and RoHS documentation available; no REACH claim.]]></summary>
+        <content type="html"><![CDATA[ <nav><a href="/">Home</a> / <a href="/eptfe-waterproof-breathable-membrane/">Membranes</a> / Airflow test basis</nav>
+<h1>Why ePTFE Vent Membrane Airflow Requires Fixed Ø10 mm and 7 kPa Test Standards</h1>
+<p class="fig-note">Figures are schematic illustrations only; they are not photographs of products or measured data.</p>
+
+<p class="note">Scope: the figures discussed here are <strong>material-level test values</strong> for membrane supplied by Mimoyin, used behind a vent or inside a die-cut part. They are not finished-assembly measurements.</p>
+
+<h2>1. The common mistake: a number with no conditions</h2>
+<p>An airflow figure quoted as just "5,000 ml/min" tells you almost nothing. Flow through a porous film depends on how big the test opening is, how much pressure pushes the air through, the film area, thickness and temperature. Change any of those and the number changes — often by a lot.</p>
+<p>The most frequent sourcing error is comparing figures measured in different ways as if they were the same unit. Two formats cause most of the confusion:</p>
+<ul>
+<li><strong>Per-area flux</strong> — written as ml/min/cm² (or ml/cm²/min), the flow through one square centimetre of film.</li>
+<li><strong>Fixed-orifice total flow</strong> — written as ml/min at a stated orifice and pressure, the total flow through the whole test port.</li>
+</ul>
+<p class="note">These are different physical quantities. A per-area value and a fixed-orifice total flow differ by orders of magnitude; there is no honest way to place them in the same column as if they were directly comparable.</p>
+
+<h2>2. The three elements that must be stated</h2>
+<p>A comparable airflow figure carries three pieces of information. Our material-level basis is <strong>ml/min @ Ø10 mm @ 7 kPa</strong>.</p>
+
+<figure class="article-figure" data-figure="basis">
+<img src="/assets/svg/test-basis-three-elements-en.svg" alt="Schematic of the three required airflow test elements: fixed area, fixed pressure and total flow" width="860" height="420" loading="lazy">
+<figcaption>The three elements of a comparable airflow figure - schematic only, not measured data.</figcaption>
+</figure>
+
+<h3>Fixed area — what Ø10 mm means</h3>
+<p>Ø10 mm is the diameter of the test aperture. It fixes the test area so results from different labs mean the same thing. It is a property of the test rig, not of the customer's product: a vent pad in an enclosure may be far smaller or larger than 10 mm. Confusing the test orifice with the product size is a common source of wrong assumptions.</p>
+
+<h3>Fixed pressure — what 7 kPa means</h3>
+<p>7 kPa (70 mbar) is the differential pressure applied across the film during the test. Flow rises with pressure, so a value measured at a different pressure is a different result. Stating the pressure lets a buyer judge whether the figure matches the real pressure swings the enclosure will see.</p>
+
+<h3>Total flow — from ml/min to a die-cut part</h3>
+<p>ml/min reports the total volume of air passing through the full test port per minute. For a die-cut part, flow scales with the usable membrane area and the part geometry, so the final part airflow is matched per drawing and verified on the customer's interface. The material figure is a starting reference, not a finished-part result.</p>
+
+<h2>3. A supplier-data checklist for procurement</h2>
+<p>When two datasheets land on your desk, run through these questions before comparing anything:</p>
+<ol>
+<li>Is the orifice diameter stated? If not, the area is unknown.</li>
+<li>Is the differential pressure stated? If not, the driving force is unknown.</li>
+<li>Is the unit per-area flux or fixed-orifice total flow? Do not mix them.</li>
+<li>Is the value a material-level figure or a finished-part measurement?</li>
+<li>Are water entry pressure, adhesive temperature limit and film temperature reported separately?</li>
+<li>Is there lot-level test data, and is documentation available on request?</li>
+</ol>
+<p>For the engineering background behind these numbers, see the <a href="/airflow-vs-water-entry-pressure-tradeoff/">airflow vs water entry pressure guide</a> and the <a href="/battery-vent-pad-membrane-spec-checklist/">battery vent pad membrane checklist</a>.</p>
+
+<figure class="article-figure" data-figure="orifice">
+<img src="/assets/svg/airflow-test-orifice-en.svg" alt="Schematic of the fixed 10 mm orifice under 7 kPa differential pressure" width="860" height="420" loading="lazy">
+<figcaption>Fixed-orifice airflow test setup - schematic only, not a photo of test equipment or measured data.</figcaption>
+</figure>
+
+<h2>4. Compliance and documentation</h2>
+<p>RoHS testing has been completed and the report is available on request. REACH material compliance may be achievable, but it has not been tested, so we make no REACH compliance claim and will not present one. We also do not claim certifications we have not obtained. Die-cut samples and tooling are charged per drawing and process, freight is billed at the actual forwarder cost, and standard parts are sampled in 3–5 working days.</p>
+
+<h2>FAQ</h2>
+<h3>Why can't I compare ml/min/cm2 with ml/min?</h3>
+<p>They are different quantities: flow per unit area versus total flow through a fixed port. They differ by orders of magnitude and cannot be compared directly.</p>
+<h3>What does Ø10 mm mean in an airflow figure?</h3>
+<p>The diameter of the test aperture, not a product dimension. Stating it fixes the test area so figures from different labs are comparable.</p>
+
+<p>Want a figure matched to your drawing? <a href="/contact/">Send your port geometry and test conditions to our engineering team</a>.</p>
+
+<h2>Related reading</h2>
+<ul>
+<li><a href="/airflow-vs-water-entry-pressure-tradeoff/">Airflow vs water entry pressure explained</a></li>
+<li><a href="/battery-vent-pad-membrane-spec-checklist/">Battery vent pad membrane specification checklist</a></li>
+<li><a href="/eptfe-waterproof-breathable-membrane-specifications/">ePTFE membrane specifications and test methods</a></li>
+</ul> ]]></content>
+    </entry>
 </feed>
