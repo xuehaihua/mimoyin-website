@@ -437,15 +437,17 @@ document.addEventListener('DOMContentLoaded', function() {
     imgs.forEach(function(img) {
       if (!img.alt && img.src.indexOf('87-2') > -1) { img.alt = 'Mimoyin ePTFE membrane production workshop'; }
     });
+    /* mm-about-contact-guard */ if (!document.querySelector('.mm-about-contact')) {
     var ac = document.createElement('div');
     ac.className = 'mm-about-contact';
     ac.innerHTML = '<h3>Contact Mimoyin</h3>' +
       '<p><strong>📍 Address:</strong> 2/F, Building 3, Songyuan Lou Industrial Park, Songgang Street, Baoan District, Shenzhen, Guangdong, China</p>' +
       '<p><strong>📧 Email:</strong> <a href="mailto:info@mimoyin.com">info@mimoyin.com</a></p>' +
-      '<p><strong>📱 Phone / WhatsApp:</strong> +86 134 3084 5669</p>' +
+      '<p><strong>📱 Phone / WhatsApp:</strong> <a href="https://wa.me/8613430845669" target="_blank" rel="noopener">+86 134 3084 5669</a></p>' +
       '<p><strong>🏭 Factory:</strong> Songgang, Baoan District, Shenzhen · Established 2018</p>';
-    var at = document.querySelector('.post-content') || document.querySelector('article') || document.querySelector('main');
+    var at = document.querySelector('.content__entry') || document.querySelector('.post-content') || document.querySelector('article') || document.querySelector('main');
     if (at) { at.appendChild(ac); }
+    }
     if (!hasSchema('Organization')) {
       var org = document.createElement('script');
     org.type = 'application/ld+json';
