@@ -1630,8 +1630,14 @@
         <summary type="html"><![CDATA[A specification checklist for the membrane inside a battery vent pad: airflow at 7 kPa through a 10 mm orifice, water-entry pressure, adhesive and die-cut tolerance. Custom per drawing.]]></summary>
         <content type="html"><![CDATA[ <nav><a href="/">Home</a> / <a href="/eptfe-waterproof-breathable-membrane/">Membranes</a> / Battery vent pads</nav>
 <h1>How to Specify ePTFE Membrane for Battery Explosion-Proof Vent Pads</h1>
+<p class="fig-note">Figures are schematic illustrations only; they are not photographs of products or test data.</p>
+
 <p class="note">Scope: this article covers the <strong>membrane material used inside an explosion-proof vent pad</strong>, not a finished valve or vent-pad assembly. Every value below is a material-level test range; final parts are matched to the customer's drawing.</p>
 
+<figure class="article-figure" data-figure="scope">
+<img src="/assets/svg/vent-pad-supply-scope-en.svg" alt="Schematic cross-section showing the ePTFE membrane layer supplied by Mimoyin inside a vent-pad housing" width="860" height="420" loading="lazy">
+<figcaption>Schematic illustration of the supply boundary only - not a product photograph. Only the highlighted membrane layer is supplied by Mimoyin.</figcaption>
+</figure>
 <h2>1. The failure that starts the specification review</h2>
 <p>A battery enclosure passes its initial water test, then a summer heat cycle leaves the pack shell visibly bulged. Another batch passes pressure relief but takes on water after a wash-down. In both cases the vent pad was bought as a catalogue item, and nobody checked whether the membrane behind the port had the right airflow-to-water-entry balance for that specific housing.</p>
 <p>Four recurring complaints drive most redesigns:</p>
@@ -1654,6 +1660,10 @@
 </table>
 <p class="note">Engineering trade-off: <strong>higher airflow generally means lower water-entry pressure</strong>. PU is cheaper and fluorine-free has an environmental story; ePTFE is chosen when temperature, chemical exposure or consistent microporous structure dominates. IP67/IP68 is a result of the whole enclosure, not a membrane rating.</p>
 
+<figure class="article-figure" data-figure="airflow">
+<img src="/assets/svg/airflow-test-orifice-en.svg" alt="Schematic of airflow measurement through a 10 mm orifice under 7 kPa differential pressure" width="860" height="420" loading="lazy">
+<figcaption>Schematic of the material-level airflow test (10 mm orifice, 7 kPa) - not a photo of test equipment and not measured data.</figcaption>
+</figure>
 <h2>3. Four purchasing traps</h2>
 <ol>
 <li><strong>Comparing airflow units blindly.</strong> A per-area value and a total-flow value through a Ø10 mm port differ by orders of magnitude. Ask for the test orifice and differential pressure.</li>
@@ -1673,6 +1683,10 @@
 </ul>
 <p>Our <a href="/custom-die-cut-eptfe-membrane/">custom die-cut ePTFE membrane</a> process handles round, rectangular and irregular outlines per drawing.</p>
 
+<figure class="article-figure" data-figure="tradeoff">
+<img src="/assets/svg/airflow-water-tradeoff-en.svg" alt="Illustrative chart of the airflow versus water-entry trade-off and the four-step sampling flow" width="860" height="420" loading="lazy">
+<figcaption>Qualitative trade-off and validation flow - illustrative only, not measured data. Actual grades are matched to each customer drawing.</figcaption>
+</figure>
 <h2>5. Specification checklist before you release a drawing</h2>
 <ul>
 <li>Airflow: target range at Ø10 mm / 7 kPa, stated as custom per spec.</li>

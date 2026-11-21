@@ -581,8 +581,14 @@
         <summary type="html"><![CDATA[电池防爆阀里面的透气膜怎么选？按 7kPa、Ø10mm 测试口径的透气量、耐水压、背胶耐温和模切公差逐项核对。米摩音只做阀内膜材，按图纸打样。]]></summary>
         <content type="html"><![CDATA[ <nav><a href="/">首页</a> / <a href="/ting-tong-fang-shui-tou-sheng-mo.html">防水透声膜</a> / 防爆阀透气膜</nav>
 <h1>防爆阀内部透气膜怎么选：ePTFE 膜材选型清单</h1>
+<p class="fig-note">本文图片均为原理示意图，不是产品实物照片，也不代表实测数据。</p>
+
 <p class="note">先说清边界：深圳市米摩音科技有限公司提供的是<strong>装在防爆阀里面的透气膜材</strong>，按客户图纸模切打样，不生产阀体，也不做成品透气件。以下均为膜材材料级测试口径，不是整机实测值。</p>
 
+<figure class="article-figure" data-figure="scope">
+<img src="/assets/svg/vent-pad-supply-scope-cn.svg" alt="阀内结构剖面示意图，高亮的 ePTFE 膜材层为米摩音供货范围" width="860" height="420" loading="lazy">
+<figcaption>供货边界示意图，非实物照片。仅蓝色高亮层为我方供应的阀内透气膜材，阀体及壳体不在供货范围。</figcaption>
+</figure>
 <h2>一、从现场故障倒推参数</h2>
 <p>装配厂最常拿来的问题不是"膜材参数表看不懂"，而是几类反复出现的失效：壳体在高低温循环后出现鼓胀，说明阀内通道的泄压能力不足；淋雨或高压水枪后腔体进水，说明膜的耐水压档位偏低；膜片边缘在高温后翘起脱胶，说明背胶的耐温上限被当成膜材本身耐温；还有一类是盐雾或粉尘使用后透气量慢慢衰减，属于暴露面被堵。</p>
 <p>把现象翻译成选型变量，就是四件事：透气量档位、材料级耐水压、背胶体系、模切轮廓与公差。</p>
@@ -599,6 +605,10 @@
 </table>
 <p class="note">透气量越高，耐水压通常越低，这是膜材的物理权衡。PU 成本低，非氟膜有环保取向；需要高温、化学暴露或稳定微孔结构时才更偏向 ePTFE。IP67/IP68 是整机测试结果，不是膜材本身的参数。</p>
 
+<figure class="article-figure" data-figure="airflow">
+<img src="/assets/svg/airflow-test-orifice-cn.svg" alt="7kPa 压差下经 Ø10mm 测试孔测量透气量的口径示意图" width="860" height="420" loading="lazy">
+<figcaption>材料级透气量测试口径示意（Ø10mm 测试孔、7kPa 压差），非测试设备照片，也非实测数据。</figcaption>
+</figure>
 <h2>三、采购最容易忽略的四点</h2>
 <ol>
 <li>把"单位面积通量"和"Ø10mm 孔总流量"并列比较，两者差数量级，不能直接换算。</li>
@@ -612,6 +622,10 @@
 <p>我们不发布客户整机的结果数据。常规流程是：先确认孔径、可贴合胶宽和背胶体系，按图纸模切出样品；再按 7kPa / Ø10mm 口径报告膜材透气量和材料级耐水压，并明确标注这不是成品实测；随后对贴合后的膜片做高低温循环、盐雾和老化，复核透气量保持率与边缘是否翘起；最后交给客户做整机验证，按实测结果再调档位。</p>
 <p>圆形、方形、异形轮廓均可按图模切，详见 <a href="/ti-xu-dao-xie-ya-ping-heng-tou-qi-mo.html">定制模切服务</a>。</p>
 
+<figure class="article-figure" data-figure="tradeoff">
+<img src="/assets/svg/airflow-water-tradeoff-cn.svg" alt="透气量与耐水压定性权衡及四步打样验证流程示意图" width="860" height="420" loading="lazy">
+<figcaption>定性权衡与打样验证流程示意，非实测数据；具体档位按客户图纸匹配。</figcaption>
+</figure>
 <h2>五、下单前核对清单</h2>
 <ul>
 <li>透气量：按 7kPa / Ø10mm 口径写明目标区间，标注"按图纸定制"。</li>

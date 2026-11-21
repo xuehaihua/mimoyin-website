@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="860" height="420" role="img" aria-labelledby="ttl desc">
+<title id="ttl">Material-level airflow test method</title><desc id="desc">Schematic of airflow measurement through a 10 mm orifice under 7 kPa differential pressure</desc>
+<defs><marker id="arw" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#1a6db8"/></marker></defs>
+<rect width="860" height="420" rx="12" fill="#ffffff"/>
+<rect x="1" y="1" width="858" height="418" rx="11" fill="none" stroke="#d8e2ec" stroke-width="2"/>
+<text x="30" y="44" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="22" font-weight="700" fill="#16324f">Material-level airflow test method</text>
+<text x="830" y="42" text-anchor="end" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="12" letter-spacing="1" fill="#8a99a8">SCHEMATIC - NOT A PHOTO OR TEST DATA</text>
+<line x1="30" y1="60" x2="830" y2="60" stroke="#e6edf4" stroke-width="1.5"/>
+<rect x="150" y="120" width="560" height="222" rx="12" fill="#f6f9fc" stroke="#a7b8c8" stroke-width="2"/>
+<rect x="410" y="120" width="30" height="222" fill="#dbe4ed" stroke="#7f93a7" stroke-width="2"/>
+<circle cx="425" cy="231" r="30" fill="#ffffff" stroke="#7f93a7" stroke-width="2.5"/>
+<path d="M 215 231 L 388 231" stroke="#1a6db8" stroke-width="3" marker-end="url(#arw)" fill="none"/>
+<path d="M 464 231 L 645 231" stroke="#1a6db8" stroke-width="3" marker-end="url(#arw)" fill="none"/>
+<text x="205" y="102" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="16" font-weight="600" fill="#1a6db8">Air in</text>
+<text x="655" y="102" text-anchor="end" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="16" font-weight="600" fill="#1a6db8">Air out</text>
+<text x="425" y="308" text-anchor="middle" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="16" font-weight="600" fill="#16324f">10 mm diameter test orifice</text>
+<text x="425" y="330" text-anchor="middle" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="15" fill="#5b7288">7 kPa differential pressure</text>
+
+<rect x="30" y="372" width="800" height="32" rx="6" fill="#f2f7fc"/>
+<text x="46" y="393" font-family="system-ui,Microsoft YaHei,sans-serif" font-size="14" fill="#3c5a75">Total flow through a fixed test port - not a per-area value. An airflow figure without orifice and pressure is not comparable.</text>
+</svg>
