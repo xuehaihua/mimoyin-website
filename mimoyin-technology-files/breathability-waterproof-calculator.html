@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Breathability &amp; Waterproof Rating Calculator | ePTFE Vent Membrane</title>
-<meta name="description" content="Free interactive calculator for ePTFE waterproof breathable membrane: convert breathability (ml/min/cm2 @ 10 mm orifice @ 7 kPa) to estimated waterproof rating (meters of water column), compare ePTFE vs PU vs non-fluorinated films, and get material selection guidance.">
+<meta name="description" content="Free interactive calculator for ePTFE waterproof breathable membrane: convert breathability (ml/min at a Ø10 mm orifice under 7 kPa @ 7 kPa) to estimated waterproof rating (meters of water column), compare ePTFE vs PU vs non-fluorinated films, and get material selection guidance.">
 <style>
   :root{
     --brand:#1a5fb4; --brand-d:#134a8e; --ink:#1f2933; --muted:#6b7785;
@@ -81,7 +81,7 @@
           </select>
         </div>
         <div class="field">
-          <label for="breath1">Breathability (ml/min/cm2 @ 10 mm orifice @ 7&nbsp;kPa)</label>
+          <label for="breath1">Breathability (ml/min at a Ø10 mm orifice under 7 kPa @ 7&nbsp;kPa)</label>
           <input id="breath1" type="number" min="10" max="20000" step="10" value="2000" inputmode="decimal">
         </div>
         <div class="field" style="flex:0 0 auto;">
@@ -152,7 +152,7 @@
   <!-- FAQ (schema-friendly) -->
   <div class="card faq" id="faq">
     <h2 class="sec">Frequently asked questions</h2>
-    <h3>What does "ml/min/cm2 @ 10 mm orifice @ 7 kPa" mean?</h3>
+    <h3>What does "ml/min at a Ø10 mm orifice under 7 kPa @ 7 kPa" mean?</h3>
     <p>It is the standard breathability test: total air flow (ml per minute) passing through a 10 mm diameter orifice under a 7 kPa pressure differential. Higher ml/min = more air-permeable = "breathable".</p>
     <h3>Can I convert breathability directly to an IP rating?</h3>
     <p>Indirectly. Breathability sets the waterproof ceiling (see trade-off table). Map the resulting water-column height to IP67 (1 m / 30 min) or IP68 (continuous immersion) per IEC 60529. The calculator gives the water-column estimate; IP grading also depends on enclosure sealing.</p>

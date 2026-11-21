@@ -110,7 +110,7 @@
 <p>Selecting the right waterproof membrane for TWS earbuds requires balancing protection level, acoustic performance, and manufacturing feasibility. ePTFE membranes offer the best combination of waterproofing and breathability, while specialized acoustic membranes ensure that sound quality remains uncompromised.</p>
 <p>At Mimoyin Technology, we provide custom die-cut ePTFE and waterproof acoustic membranes tailored to your TWS earbud specifications. With over 10 years of membrane manufacturing experience, we help B2B buyers worldwide achieve IP67/IP68 protection without compromising audio quality.</p>
 <h3>Get Your Custom Membrane Solution</h3>
-<p><a href="/contact/"><strong>Request free samples</strong></a> and technical consultation from our engineering team. We'll review your drawing, recommend the right membrane material, and produce die-cut samples within 3-5 working days.</p>
+<p><a href="/contact/"><strong>Request a sample quote</strong></a> and technical consultation from our engineering team. We'll review your drawing, recommend the right membrane material, and produce die-cut samples within 3-5 working days.</p>
             ]]>
         </content>
     </entry>
@@ -301,7 +301,7 @@
 <li class="markdown-li">Material selection matching your specifications</li>
 <li class="markdown-li">Sample die-cutting (3–5 working days)</li>
 <li class="markdown-li">Performance validation (water pressure, airflow, acoustic)</li>
-<li class="markdown-li">Free samples for your testing</li>
+<li class="markdown-li">Samples for your testing</li>
 </ul>
 <h3 class="markdown-h3">5.3 Mass Production</h3>
 <ul class="markdown-ul" data-level-mod="0">
@@ -315,8 +315,8 @@
 <p class="markdown-p">All our ePTFE, TPU, and PU membranes comply with:</p>
 <ul class="markdown-ul" data-level-mod="0">
 <li class="markdown-li"><strong>RoHS 2.0:</strong> Restricted substance-free (10 substances Not Detected)</li>
-<li class="markdown-li"><strong>REACH:</strong> EU regulatory compliance</li>
-<li class="markdown-li"><strong>Class 10,000 cleanroom:</strong> Dust-free production environment</li>
+
+<li class="markdown-li"><strong>cleanroom workshop:</strong> Dust-free production environment</li>
 <li class="markdown-li"><strong>Full traceability:</strong> From raw material to finished part</li>
 </ul>
 <h2 class="markdown-h2">7. Frequently Asked Questions</h2>
@@ -332,7 +332,7 @@
 <h3 class="markdown-h3">Q4: Can you help with material selection?</h3>
 <p class="markdown-p">Yes. Our engineering team supports you through material selection, prototype development, and performance tuning based on your specific application requirements.</p>
 <h2 class="markdown-h2">8. Conclusion</h2>
-<p class="markdown-p">Selecting the right waterproof breathable membrane requires balancing waterproof rating, breathability, temperature range, acoustic performance, and cost. Whether you need ePTFE for automotive harsh environments, TPU for consumer electronics, or PU for cost-sensitive applications, Mimoyin Technology provides custom die-cut solutions with free samples and full engineering support.</p>
+<p class="markdown-p">Selecting the right waterproof breathable membrane requires balancing waterproof rating, breathability, temperature range, acoustic performance, and cost. Whether you need ePTFE for automotive harsh environments, TPU for consumer electronics, or PU for cost-sensitive applications, Mimoyin Technology provides custom die-cut solutions with samples and full engineering support.</p>
 <p class="markdown-p">For a detailed comparison, check our <a class="markdown-link" href="https://www.mimoyin.com/eptfe-vs-tpu-membrane-comparison-guide/" target="_blank" rel="noopener noreferrer">ePTFE vs TPU vs PU Membrane Comparison Guide</a>.</p>
 <p class="markdown-p"><strong>Contact our team today</strong> via the <a class="markdown-link" href="https://www.mimoyin.com/contact/" target="_blank" rel="noopener noreferrer">Contact Us</a> page to discuss your membrane requirements and get a custom quote for your project.</p>
             ]]>
@@ -513,7 +513,7 @@
 <li><strong>Cleanroom conversion</strong> — required for medical, automotive, and high-reliability assemblies.</li>
 <li><strong>Dimensional inspection</strong> — do they measure finished-part diameter and verify against drawing?</li>
 <li><strong>Tooling and NRE</strong> — transparent die cost, reusable across reorders.</li>
-<li><strong>Documentation</strong> — lot-level material declaration, RoHS/REACH, and test reports.</li>
+<li><strong>Documentation</strong> — lot-level material declaration, RoHS, and test reports.</li>
 </ol>
 <p>A supplier answering all seven with records is lower total risk than the cheapest converter with a vague datasheet.</p>
 <h2>FAQ</h2>
@@ -646,7 +646,7 @@
 <li><strong>Automotive electronics</strong> — ECUs, sensors, and lighting housings exposed to wash, immersion, and thermal cycling.</li>
 <li><strong>Speakers and microphones</strong> — Bluetooth speakers, smart speakers, TWS earbuds, walkie-talkies, where acoustic transparency is mandatory.</li>
 <li><strong>Wearables</strong> — smart watches and bands needing both sweat resistance and breathability.</li>
-<li><strong>Battery packs</strong> — lithium battery enclosures where pressure relief prevents swelling and rupture.</li>
+<li><strong>Battery vent pads</strong> — ePTFE membrane used inside explosion-proof vent valves to balance pressure.</li>
 <li><strong>Industrial sensors</strong> — pressure transmitters, flow meters, gas detectors in harsh environments.</li>
 <li><strong>Outdoor and portable electronics</strong> — action cameras, locator tags, shavers.</li>
 </ul>
@@ -704,7 +704,7 @@
 <li><strong>Air-permeability method</strong> — confirm it is stated with orifice diameter and differential pressure (Ø10 mm @ 7 kPa, ml/min). Unspecified airflow is unverifiable.</li>
 <li><strong>Mass-production ability</strong> — cleanroom lamination, die-cutting tolerance, batch consistency, and traceability.</li>
 <li><strong>Custom tooling</strong> — can they build the die and jig for your shape without a large NRE?</li>
-<li><strong>Certifications and documentation</strong> — RoHS/REACH, material declarations, and lot-level test reports.</li>
+<li><strong>Certifications and documentation</strong> — RoHS, material declarations, and lot-level test reports.</li>
 </ol>
 <p>A manufacturer that answers all seven with documents is worth more than one offering the lowest unit price with a vague datasheet.</p>
 <h2>FAQ</h2>
@@ -1067,9 +1067,9 @@
 <h3>How is it mounted?</h3>
 <p>By die-cutting and bonding with PSA backing, ultrasonic welding, or heat lamination onto the enclosure vent.</p>
 <h3>What certifications apply?</h3>
-<p>RoHS and REACH compliance; material properties verified per ASTM and IEC test methods listed above.</p>
-<h2>Request a Free Sample or Quote</h2>
-<p>Need the exact grade for your enclosure? <a href="/contact/">Contact Mimoyin</a> for free samples, technical drawings, and a customized parameter quote. Our engineering team supports sample testing against your own test standard.</p>
+<p>RoHS compliance; material properties verified per ASTM and IEC test methods listed above.</p>
+<h2>Request a Sample Quote</h2>
+<p>Need the exact grade for your enclosure? <a href="/contact/">Contact Mimoyin</a> for samples, technical drawings, and a customized parameter quote. Our engineering team supports sample testing against your own test standard.</p>
 <div class="related-specs" style="margin-top: 2rem; padding: 1.25rem; background: #f5f7fa; border-left: 4px solid #1a73e8; border-radius: 6px;">
 <h2 style="margin-top: 0; font-size: 1.15rem;">Related Product Specifications</h2>
 <ul style="margin: 0; padding-left: 1.2rem;">
@@ -1203,9 +1203,9 @@
 <h3>Will it affect waterproofing of the whole device?</h3>
 <p>No. When correctly specified and mounted, the vent maintains the device's IP rating while enabling sound.</p>
 <h3>What certifications apply?</h3>
-<p>RoHS and REACH; properties verified per IEC and ASTM methods above.</p>
-<h2>Request a Free Sample or Quote</h2>
-<p>Need the right acoustic grade for your mic or speaker? <a href="/contact/">Contact Mimoyin</a> for free samples and a customized quote with insertion-loss data.</p>
+<p>RoHS; properties verified per IEC and ASTM methods above.</p>
+<h2>Request a Sample Quote</h2>
+<p>Need the right acoustic grade for your mic or speaker? <a href="/contact/">Contact Mimoyin</a> for samples and a customized quote with insertion-loss data.</p>
 <div class="related-specs" style="margin-top: 2rem; padding: 1.25rem; background: #f5f7fa; border-left: 4px solid #1a73e8; border-radius: 6px;">
 <h2 style="margin-top: 0; font-size: 1.15rem;">Related Product Specifications</h2>
 <ul style="margin: 0; padding-left: 1.2rem;">
@@ -1362,9 +1362,9 @@
 <h3>Will it degrade the seal over time?</h3>
 <p>No — the vent reduces seal stress, extending gasket life rather than reducing it.</p>
 <h3>What certifications apply?</h3>
-<p>RoHS and REACH; verified per ASTM and IEC methods listed.</p>
-<h2>Request a Free Sample or Quote</h2>
-<p>Need a vent for your enclosure? <a href="/contact/">Contact Mimoyin</a> for free samples, drawings, and a customized pressure-equalization quote.</p>
+<p>RoHS; verified per ASTM and IEC methods listed.</p>
+<h2>Request a Sample Quote</h2>
+<p>Need a vent for your enclosure? <a href="/contact/">Contact Mimoyin</a> for samples, drawings, and a customized pressure-equalization quote.</p>
 <div class="related-specs" style="margin-top: 2rem; padding: 1.25rem; background: #f5f7fa; border-left: 4px solid #1a73e8; border-radius: 6px;">
 <h2 style="margin-top: 0; font-size: 1.15rem;">Related Product Specifications</h2>
 <ul style="margin: 0; padding-left: 1.2rem;">
@@ -1514,7 +1514,7 @@
 <h2>FAQ</h2>
 <p><strong>Will a waterproof vent block sound on my smart watch?</strong><br>No—with ePTFE. A correctly specified ePTFE acoustic vent adds ≤1 dB insertion loss at 1 kHz (imperceptible) while blocking water and dust. Low-grade non-fluorine films are what add 6–10 dB and muffle sound; by contrast, acoustic-grade PU films measure only 0.5–1.5 dB — in the same league as ePTFE (≤1 dB). Specify an acoustic-grade membrane to stay ≤1 dB.5 dB. For designs needing &gt;2 m depth or high heat, ePTFE is the only film that holds up.</p>
 <p><strong>IP67 vs IP68 for a swim-proof watch?</strong><br>IP67 covers 1 m / 30 min (rain, hand-wash, sink drop). IP68 extends to 2 m / 30 min for swimming and diving. Most swim-proof kids' and sports watches now specify IP68.</p>
-<p><strong>Can you die-cut custom wearable ports?</strong><br>Yes. We laser-cut ePTFE vents to your port geometry at ±0.05 mm and supply free samples plus a full acoustic + waterproof test report per lot.</p>
+<p><strong>Can you die-cut custom wearable ports?</strong><br>Yes. We laser-cut ePTFE vents to your port geometry at ±0.05 mm and supply samples plus a full acoustic + waterproof test report per lot.</p>
 <p><em>Related guide: see our <a href="/acoustic-vent-membrane/">Acoustic Vent Membrane (防水透声膜 / 透音膜) pillar page</a> for the full ePTFE vs TPU vs PU breakdown, and the <a href="/waterproof-acoustic-membrane-tws-earbuds/">TWS earbuds acoustic membrane guide</a> for the sibling wearable application.</em></p>
             ]]>
         </content>
@@ -1611,21 +1611,91 @@
 <li><strong>Backing adhesive out of thermal range.</strong> Under-hood hits +120 °C; generic PSA creeps. Specify 3M automotive VHB.</li>
 <li><strong>No salt-spray validation.</strong> 96 h salt spray is the minimum; many low-cost vents clog or leak here.</li>
 </ol>
-<p><strong>Selection standard we ship:</strong> ePTFE ≥1000 ml/min @ &#216;10 mm orifice · IP68 (2 m / 30 min) · fluid-resistant · 3M VHB · die-cut ±0.10 mm · IATF 16949 lot traceability.</p>
-<h2>Factory Case: EV Battery-Pack Vent</h2>
-<p>An EV pack maker saw 11% swelling-related claims after summer heat. Their TPU vent flowed only 400 ml/min @ &#216;10 mm orifice and softened in coolant. We switched to a 0.20 mm ePTFE membrane with 3M VHB:</p>
-<ul>
-<li>Air flow 400 → <strong>1200 ml/min @ &#216;10 mm orifice</strong>; pack pressure stayed within envelope through +120 °C cycles.</li>
-<li>Swelling claims fell from 11% to <strong>0.4%</strong> in two quarters.</li>
-<li>96 h salt spray passed with zero clog; road-test fleet hit 50,000 km clean.</li>
-<li>Volume: 1.8 million vents over 12 months, zero pressure-related returns.</li>
-</ul>
+<p><strong>Selection standard we ship:</strong> ePTFE ≥1000 ml/min @ &#216;10 mm orifice · IP68 (2 m / 30 min) · fluid-resistant · 3M VHB · die-cut ±0.10 mm · lot-level traceability from raw material to die-cut parts.</p>
+<h2>Engineering Note: Membrane for Battery Explosion-Proof Vent Pads</h2><p>We supply the ePTFE membrane used inside explosion-proof vent pads, not the finished valve. Validation is done against the customer's port geometry and test method, not a fixed catalogue part:</p><ul><li>Base film: ePTFE, custom per spec; airflow reported as ml/min at a Ø10 mm orifice under 7 kPa.</li><li>Bonding: 3M VHB or customer-specified adhesive, die-cut to the vent-pad outline.</li><li>Tests: water-entry pressure, airflow, high/low-temperature cycling and aging, per drawing.</li><li>Output: die-cut sample lots for the customer's own pack-level verification; we do not publish pack-level claim data.</li></ul>
 <h2>FAQ</h2>
 <p><strong>Why does a battery pack need a vent at all?</strong><br>Lithium cells off-gas as they heat; without a breathable relief path, internal pressure swells and can rupture the pack. An ePTFE vent equalizes pressure while blocking water and dust.</p>
 <p><strong>IP67 vs IP68 for automotive modules?</strong><br>IP67 (1 m / 30 min) suits splash and rain exposure; IP68 (2 m / 30 min) is for submerged or high-pressure wash-down modules such as off-road and EV pack enclosures.</p>
-<p><strong>Can you supply automotive-grade traceability?</strong><br>Yes. We provide IATF 16949-aligned lot traceability, fluid-resistance data, and free samples for on-vehicle validation.</p>
+<p><strong>Can you supply automotive-grade traceability?</strong><br>Yes. We provide lot-level traceability from raw material to die-cut parts, fluid-resistance data, and samples for on-vehicle validation.</p>
 <p><em>Related guide: see our <a href="/pressure-equalization-vent-membrane/">Pressure Equalization Vent Membrane pillar page</a> and the <a href="/waterproof-breathable-membrane/">Waterproof Breathable Membrane pillar page</a> for the full material and application breakdown.</em></p>
             ]]>
         </content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Specify ePTFE Membrane for Battery Explosion-Proof Vent Pads]]></title>
+        <id>https://www.mimoyin.com/battery-vent-pad-membrane-spec-checklist/</id>
+        <link href="https://www.mimoyin.com/battery-vent-pad-membrane-spec-checklist/" rel="alternate" type="text/html"/>
+        <updated>2026-11-21T16:45:00+08:00</updated>
+        <published>2026-11-21T16:45:00+08:00</published>
+        <summary type="html"><![CDATA[A specification checklist for the membrane inside a battery vent pad: airflow at 7 kPa through a 10 mm orifice, water-entry pressure, adhesive and die-cut tolerance. Custom per drawing.]]></summary>
+        <content type="html"><![CDATA[ <nav><a href="/">Home</a> / <a href="/eptfe-waterproof-breathable-membrane/">Membranes</a> / Battery vent pads</nav>
+<h1>How to Specify ePTFE Membrane for Battery Explosion-Proof Vent Pads</h1>
+<p class="note">Scope: this article covers the <strong>membrane material used inside an explosion-proof vent pad</strong>, not a finished valve or vent-pad assembly. Every value below is a material-level test range; final parts are matched to the customer's drawing.</p>
+
+<h2>1. The failure that starts the specification review</h2>
+<p>A battery enclosure passes its initial water test, then a summer heat cycle leaves the pack shell visibly bulged. Another batch passes pressure relief but takes on water after a wash-down. In both cases the vent pad was bought as a catalogue item, and nobody checked whether the membrane behind the port had the right airflow-to-water-entry balance for that specific housing.</p>
+<p>Four recurring complaints drive most redesigns:</p>
+<ul>
+<li><strong>Shell swelling</strong> — gas generated during charge/discharge cannot escape fast enough through an under-venting membrane.</li>
+<li><strong>Water ingress</strong> — a high-airflow membrane with low water-entry pressure is used on a pack that sees pressure washing or standing water.</li>
+<li><strong>Edge lift after thermal cycling</strong> — the adhesive system softens or creeps before the membrane itself ages out.</li>
+<li><strong>Airflow drift</strong> — dust, salt mist or oil contaminates the exposed face and slowly blocks the microporous path.</li>
+</ul>
+
+<h2>2. Compare materials with one measurement method</h2>
+<p>Airflow in this table is <strong>ml/min at a Ø10 mm orifice under 7 kPa</strong>. It is the total flow through a fixed test port, not a per-area value; a number without the orifice and pressure is not comparable.</p>
+<table>
+<thead><tr><th>Material</th><th>Airflow (material level)</th><th>Water entry</th><th>Sound loss</th><th>Continuous temperature</th></tr></thead>
+<tbody>
+<tr><td>PU membrane</td><td>Lower grade, custom per spec</td><td>About 1–2 m water column</td><td>0.5–1.5 dB for a good acoustic grade</td><td>Clearly lower upper limit than ePTFE</td></tr>
+<tr><td>Fluorine-free membrane</td><td>Custom per spec</td><td>About 1–2 m water column</td><td>Typically 6–10 dB</td><td>-40 to +120 °C</td></tr>
+<tr><td>ePTFE membrane</td><td>200–12,000 ml/min, custom per spec</td><td>About 2–50 m depending on grade</td><td>≤1 dB for acoustic grades</td><td>-40 to +260 °C</td></tr>
+</tbody>
+</table>
+<p class="note">Engineering trade-off: <strong>higher airflow generally means lower water-entry pressure</strong>. PU is cheaper and fluorine-free has an environmental story; ePTFE is chosen when temperature, chemical exposure or consistent microporous structure dominates. IP67/IP68 is a result of the whole enclosure, not a membrane rating.</p>
+
+<h2>3. Four purchasing traps</h2>
+<ol>
+<li><strong>Comparing airflow units blindly.</strong> A per-area value and a total-flow value through a Ø10 mm port differ by orders of magnitude. Ask for the test orifice and differential pressure.</li>
+<li><strong>Treating IP rating as a membrane specification.</strong> Housing seal, gasket compression and adhesive bonding decide the final result as much as the film does.</li>
+<li><strong>Mixing up adhesive temperature and film temperature.</strong> A membrane rated to +260 °C does not make its backing adhesive survive the same temperature.</li>
+<li><strong>Assuming a standard disc fits every port.</strong> Port geometry, adhesive ring width and die-cut tolerance must be taken from the customer drawing.</li>
+</ol>
+<p>For background, see our <a href="/eptfe-waterproof-vent-membrane-small-shells-batteries-microphones/">ePTFE vent membrane for small shells</a> and <a href="/pressure-equalization-vent-membrane/">pressure equalization membrane</a> guides.</p>
+
+<h2>4. How a vent-pad membrane is actually validated</h2>
+<p>We do not publish pack-level claim data. A typical validation follows the customer's interface drawing:</p>
+<ul>
+<li>Confirm port diameter, available bonding land and adhesive system, then die-cut a sample lot to that outline.</li>
+<li>Report membrane airflow at Ø10 mm / 7 kPa and water-entry pressure as material-level values, and state that they are not finished-part results.</li>
+<li>Run high/low-temperature cycling, salt mist and aging on the bonded membrane, then check airflow retention and edge lift.</li>
+<li>Send sample lots for the customer's own enclosure-level verification; adjust grade only against measured results.</li>
+</ul>
+<p>Our <a href="/custom-die-cut-eptfe-membrane/">custom die-cut ePTFE membrane</a> process handles round, rectangular and irregular outlines per drawing.</p>
+
+<h2>5. Specification checklist before you release a drawing</h2>
+<ul>
+<li>Airflow: target range at Ø10 mm / 7 kPa, stated as custom per spec.</li>
+<li>Water entry: material-level water column matched to the worst-case exposure.</li>
+<li>Adhesive: chemical family, temperature limit and bond width called out separately from film temperature.</li>
+<li>Die-cut: outline tolerance and liner/winding requirements from the assembly drawing.</li>
+<li>Aging: salt mist, thermal cycling and damp heat conditions agreed before volume order.</li>
+<li>Documentation: RoHS report and lot-level test records. We do not claim REACH certification.</li>
+</ul>
+
+<h2>FAQ</h2>
+<h3>Do you supply the finished explosion-proof valve?</h3>
+<p>No. We supply the ePTFE membrane material placed inside the vent pad. We do not manufacture the valve body.</p>
+<h3>Are samples free?</h3>
+<p>Samples and die-tooling are charged per drawing and process. Freight is billed at the actual forwarder cost, with no markup. Typical sample lead time is 3–5 working days.</p>
+
+<p>Send your port drawing and test conditions for a membrane match. <a href="/contact/">Contact our engineering team</a> for a quote.</p>
+
+<h2>Related reading</h2>
+<ul>
+<li><a href="/eptfe-waterproof-breathable-membrane-specifications/">ePTFE membrane specifications and test methods</a></li>
+<li><a href="/eptfe-vs-tpu-membrane-detailed-comparison-guide/">ePTFE vs TPU membrane comparison</a></li>
+<li><a href="/how-to-choose-the-right-waterproof-breathable-membrane-for-your-electronics-application/">Choosing a waterproof breathable membrane for electronics</a></li>
+</ul> ]]></content>
     </entry>
 </feed>
